@@ -1,7 +1,11 @@
 /* GLOBAL */
+@import "global/normalize.scss";
+@import "global/mixins";
 @import "global/variables";
 @import "global/global";
 @import "global/fonts";
 
 /* BLOCKS */
+@import "blocks/page";
 @import "blocks/header";
+@import "blocks/nav-list";

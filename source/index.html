@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Drink2Go</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="header">
-      
-    </header>
 
-    <script src="js/script.js" defer></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Drink2Go</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page__body">
+  <div class="page__wrapper">
+    <header class="header">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" width="170" height="36">
+        <source media="(min-width: 768px)" srcset="./images/logo-laptop.svg" width="82" height="36">
+        <img class="" src="./images/logo-mobile.svg" width="32" height="36" alt="Логотип компании Drink2Go">
+      </picture>
+      <div class="header__right-wrapper">
+        <a class="header__link" href="#">
+          <span class="header__span visually-hidden">Войти</span>
+          <svg class="header__svg" width="16" height="16" aria-label="Нажмите для входа в личный кабинет">
+            <use xlink:href="images/icons/stack.svg#user-icon"></use>
+          </svg>
+
+        </a>
+        <a class="header__link" href="#">
+          <span class="header__span visually-hidden">Корзина</span>
+          <svg class="header__svg" width="16" height="16" aria-label="Нажмите для перехода в корзину">
+            <use xlink:href="images/icons/stack.svg#basket-icon"></use>
+          </svg>
+        </a>
+        <button class="header__button js-toggle-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <nav class="header__nav header__nav--closed">
+        <ul class="header__list nav-list">
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Каталог</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Доставка</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">О нас</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <script src="js/script.js" defer></script>
+</body>
+
 </html>
