@@ -1,1 +1,180 @@
 /* здесь используйте глобальные переменные */
+// базовые цвета
+$base-white: #ffffff;
+$base-black: #333333;
+$base-grey: #bdbdbd;
+$base-primary: #7859cf;
+$base-secondary: #f0ebff;
+
+// дополнительные цвета
+$primary-opacity: rgba(120, 89, 207, 0.25);
+$primary-lighter: #9070ec;
+$primary-darker: #593cac;
+$light-grey: #e2e2e2;
+
+// фоновые цвета
+$lighest-grey: #f8f8f8;
+$flat-white: #f3ebe1;
+$lavender-latte: #eae6fc;
+$espresso: #e5e6e8;
+
+// шрифты
+$slider-title-desktop: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 56px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 80px,
+  letter-spacing: 1.12px,
+);
+
+$slider-title-tablet: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 56px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 80px,
+  letter-spacing: 1.12px,
+);
+
+$slider-title-mobile: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 36px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 48px,
+  letter-spacing: 0.72px,
+);
+
+$slider-description-desktop: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 20px,
+  font-style: normal,
+  font-weight: 400,
+  line-height: 32px,
+);
+
+$slider-description-tablet: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 20px,
+  font-style: normal,
+  font-weight: 400,
+  line-height: 32px,
+);
+
+$slider-description-mobile: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 14px,
+  font-style: normal,
+  font-weight: 400,
+  line-height: 20px,
+);
+
+$h2-desktop: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 42px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 64px,
+);
+
+$h2-tablet: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 42px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 64px,
+);
+
+$h2-mobile: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 24px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 36px,
+);
+
+$h3-desktop: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 24px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 36px,
+);
+
+$h3-tablet: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 24px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 36px,
+);
+
+$h3-mobile: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 18px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 32px,
+);
+
+$h4: (
+  color: $base-primary,
+  font-family: Montserrat,
+  font-size: 14px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 20px,
+  letter-spacing: 0.28px,
+);
+
+$price: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 20px,
+  font-style: normal,
+  font-weight: 600,
+  line-height: 32px,
+);
+
+$old-price: (
+  color: $base-primary,
+  font-family: Montserrat,
+  font-size: 16px,
+  font-style: normal,
+  font-weight: 400,
+  line-height: 32px,
+  text-decoration-line: strikethrough,
+);
+
+$label: (
+  color: $base-black,
+  font-family: Montserrat,
+  font-size: 16px,
+  font-style: normal,
+  font-weight: 600,
+  line-height: 24px,
+);
+
+$badge: (
+  color: $base-primary,
+  font-family: Montserrat,
+  font-size: 12px,
+  font-style: normal,
+  font-weight: 700,
+  line-height: 16px,
+  letter-spacing: 0.48px,
+  text-transform: uppercase,
+);
