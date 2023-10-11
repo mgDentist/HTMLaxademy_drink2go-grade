@@ -11,24 +11,27 @@
 <body class="page__body">
   <div class="page__wrapper">
     <header class="header">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" width="170" height="36">
-        <source media="(min-width: 768px)" srcset="./images/logo-laptop.svg" width="82" height="36">
-        <img class="" src="./images/logo-mobile.svg" width="32" height="36" alt="Логотип компании Drink2Go">
-      </picture>
+      <div class="header__left-wrapper">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" width="170" height="36">
+          <source media="(min-width: 768px)" srcset="./images/logo-laptop.svg" width="82" height="36">
+          <img class="" src="./images/logo-mobile.svg" width="32" height="36" alt="Логотип компании Drink2Go">
+        </picture>
+        <span class="header__left-span">Интернет-магазин кофейных напитков</span>
+      </div>
       <div class="header__right-wrapper">
         <a class="header__link" href="#">
-          <span class="header__span visually-hidden">Войти</span>
           <svg class="header__svg" width="16" height="16" aria-label="Нажмите для входа в личный кабинет">
             <use xlink:href="images/icons/stack.svg#user-icon"></use>
           </svg>
+          <span class="header__right-span">Войти</span>
 
         </a>
         <a class="header__link" href="#">
-          <span class="header__span visually-hidden">Корзина</span>
           <svg class="header__svg" width="16" height="16" aria-label="Нажмите для перехода в корзину">
             <use xlink:href="images/icons/stack.svg#basket-icon"></use>
           </svg>
+          <span class="header__right-span">Корзина</span>
         </a>
         <button class="header__button js-toggle-button" type="button">
           <span class="visually-hidden">Открыть меню</span>

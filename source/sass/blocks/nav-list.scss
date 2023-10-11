@@ -1,10 +1,20 @@
 .nav-list {
   @include clear-list;
 
+  min-width: 320px;
   position: absolute;
-  width: 320px;
   left: -20px;
   top: 100%;
+
+  @media (min-width: $tablet) {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 20px;
+  }
 }
 
 .nav-list__item {
@@ -16,6 +26,14 @@
 
   &:last-child {
     border-bottom: 1px solid $base-secondary;
+
+    @media (min-width: 767px) {
+      border: none;
+    }
+  }
+
+  @media (min-width: 767px) {
+    border: none;
   }
 }
 
@@ -37,6 +55,10 @@
   &:active {
     background-color: $base-secondary;
     color: $base-primary;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 32px 20px;
   }
 
 }
