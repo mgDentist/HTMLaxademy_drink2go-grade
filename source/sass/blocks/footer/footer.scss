@@ -30,3 +30,19 @@
     padding-right: 40px;
   }
 }
+
+.footer__section {
+  @media (max-width: $tablet) {
+    position: relative;
+
+    &:not(:last-child):after {
+      position: absolute;
+      content: '';
+      left: -20px;
+      right: -20px;
+      bottom: 0;
+      height: 1px;
+      background-color: $base-secondary;
+    }
+  }
+}
