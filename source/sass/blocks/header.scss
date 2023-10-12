@@ -29,8 +29,8 @@
 }
 
 .header__nav {
-  z-index: 2;
   min-width: 320px;
+  position: relative;
 
   @media (max-width: 767px) {
     &--closed {
