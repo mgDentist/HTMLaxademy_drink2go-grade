@@ -47,6 +47,14 @@
   letter-spacing: 0.24px;
   text-transform: uppercase;
 
+  &--current {
+
+    @media (min-width: $tablet) {
+    color: $base-primary;
+    box-shadow: 0 2px 0 0 $base-primary;
+  }
+}
+
   &:hover,
   &:focus {
     color: $base-primary;
