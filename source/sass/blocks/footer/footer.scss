@@ -1,0 +1,32 @@
+.footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $base-white;
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "main main main"
+      "e-shop media contacts"
+      "dev dev dev";
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "main e-shop media contacts"
+      "dev dev dev dev";
+    column-gap: 30px;
+    row-gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

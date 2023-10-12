@@ -5,6 +5,7 @@
   position: absolute;
   left: -20px;
   top: 100%;
+  background-color: $base-white;
 
   @media (min-width: $tablet) {
     position: static;

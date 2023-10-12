@@ -1,0 +1,48 @@
+.footer-e-shop {
+  padding: 20px 0 20px;
+
+  grid-area: e-shop;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 49px;
+  }
+}
+
+.footer-e-shop__title {
+  margin-bottom: 12px;
+  color: $base-primary;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.28px;
+}
+
+.footer-e-shop__link {
+  padding: 8px 0 8px;
+  margin-bottom: 4px;
+  color: $base-black;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
