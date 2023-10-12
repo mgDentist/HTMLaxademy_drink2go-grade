@@ -1,10 +1,10 @@
 .nav-list {
   @include clear-list;
-
+  z-index: 5;
   min-width: 320px;
   position: absolute;
   left: -20px;
-  top: 100%;
+  // top: 100%;
   background-color: $base-white;
 
   @media (min-width: $tablet) {

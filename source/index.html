@@ -9,137 +9,144 @@
 </head>
 
 <body class="page__body">
-<div class="page__wrapper">
-  <header class="header">
-    <div class="header__wrapper">
-      <div class="header__left-wrapper">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" width="170" height="36">
-          <source media="(min-width: 768px)" srcset="./images/logo-laptop.svg" width="82" height="36">
-          <img class="header__logo" src="./images/logo-mobile.svg" width="32" height="36"
-            alt="Логотип компании Drink2Go">
-        </picture>
-        <span class="header__left-span">Интернет-магазин кофейных напитков</span>
-      </div>
-      <div class="header__right-wrapper">
-        <a class="header__link" href="#">
-          <svg class="header__svg" width="16" height="16" aria-label="Нажмите для входа в личный кабинет">
-            <use xlink:href="images/icons/stack.svg#user-icon"></use>
-          </svg>
-          <span class="header__right-span">Войти</span>
-
-        </a>
-        <a class="header__link" href="#">
-          <svg class="header__svg" width="16" height="16" aria-label="Нажмите для перехода в корзину">
-            <use xlink:href="images/icons/stack.svg#basket-icon"></use>
-          </svg>
-          <span class="header__right-span">Корзина</span>
-        </a>
-        <button class="header__button js-toggle-button" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
-      <nav class="header__nav header__nav--closed">
-        <ul class="header__list nav-list">
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link nav-list__link--current">Главная</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Каталог</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Доставка</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">О нас</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="main"></main>
-
-
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <section class="footer__section footer-main">
-        <h4 class="visually-hidden">Социальные сети</h4>
-        <div class="footer-main__logo-wrapper">
+  <div class="page__wrapper">
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__left-wrapper">
           <picture>
-            <source media="(min-width: 768px)" srcset="./images/logo-desktop.svg" width="170" height="36">
-            <img class="footer-main__logo" src="./images/logo-laptop.svg" width="82" height="36"
+            <source media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" width="170" height="36">
+            <source media="(min-width: 768px)" srcset="./images/logo-laptop.svg" width="82" height="36">
+            <img class="header__logo" src="./images/logo-mobile.svg" width="32" height="36"
               alt="Логотип компании Drink2Go">
           </picture>
-          <span class="footer-main__logo-span">Интернет-магазин кофейных напитков</span>
+          <span class="header__left-span">Интернет-магазин кофейных напитков</span>
         </div>
-        <div class="footer-main__socials-wrapper">
-          <a class="footer-main__social-link" href="#">
-            <svg class="footer-main__social-img" width="20" height="20">
-              <use xlink:href="images/icons/stack.svg#vk-icon"></use>
+        <div class="header__right-wrapper">
+          <a class="header__link" href="#">
+            <svg class="header__svg" width="16" height="16" aria-label="Нажмите для входа в личный кабинет">
+              <use xlink:href="images/icons/stack.svg#user-icon"></use>
             </svg>
+            <span class="header__right-span">Войти</span>
+
           </a>
-          <a class="footer-main__social-link" href="#">
-            <svg class="footer-main__social-img" width="20" height="20">
-              <use xlink:href="images/icons/stack.svg#pinterest-icon"></use>
+          <a class="header__link" href="#">
+            <svg class="header__svg" width="16" height="16" aria-label="Нажмите для перехода в корзину">
+              <use xlink:href="images/icons/stack.svg#basket-icon"></use>
             </svg>
+            <span class="header__right-span">Корзина</span>
           </a>
-          <a class="footer-main__social-link" href="#">
-            <svg class="footer-main__social-img" width="20" height="20">
-              <use xlink:href="images/icons/stack.svg#ok-icon"></use>
-            </svg>
-          </a>
+          <button class="header__button js-toggle-button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
-      </section>
+        <nav class="header__nav header__nav--closed">
+          <ul class="header__list nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link nav-list__link--current">Главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Каталог</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Доставка</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">О нас</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <section class="footer__section footer-e-shop">
-        <h4 class="footer-e-shop__title">Интернет-магазин</h4>
-        <a class="footer-e-shop__link" href="#">
-          Каталог
-        </a>
-        <a class="footer-e-shop__link" href="#">
-          Доставка
-        </a>
-        <a class="footer-e-shop__link" href="#">
-          Способы оплаты
-        </a>
-        <a class="footer-e-shop__link" href="#">
-          О нас
-        </a>
-      </section>
+    <main class="main">
+      <section class="main__section hero">
 
-      <section class="footer__section footer-media">
-        <h4 class="footer-media__title">Медиа</h4>
-        <a class="footer-media__link" href="#">
-          Блог
-        </a>
-        <a class="footer-media__link" href="#">
-          Информация для СМИ
-        </a>
-        <a class="footer-media__link" href="#">
-          Правовая информация
-        </a>
       </section>
-      <section class="footer__section footer-contacts">
-        <h4 class="footer-contacts__title">Контакты</h4>
-        <a class="footer-contacts__link footer-contacts__link--address" href="#">
-          Санкт-Петербург, набережная реки Карповки, дом 5
-        </a>
-        <a class="footer-contacts__link footer-contacts__link--phone" href="#">
-          +7 (999) 999-99-99
-        </a>
-      </section>
-      <section class="footer__section footer-development">
-        <a class="footer-development__link" href="#">
-          Разработано в HTML Academy
-          <svg class="footer-development__img" width="12" height="16">
-            <use xlink:href="images/icons/stack.svg#html-academy-icon"></use>
-          </svg>
-        </a>
-      </section>
-    </div>
-  </footer>
-</div>
+      <section class="main__section"></section>
+      <section class="main__section"></section>
+      <section class="main__section"></section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <section class="footer__section footer-main">
+          <h4 class="visually-hidden">Социальные сети</h4>
+          <div class="footer-main__logo-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./images/logo-desktop.svg" width="170" height="36">
+              <img class="footer-main__logo" src="./images/logo-laptop.svg" width="82" height="36"
+                alt="Логотип компании Drink2Go">
+            </picture>
+            <span class="footer-main__logo-span">Интернет-магазин кофейных напитков</span>
+          </div>
+          <div class="footer-main__socials-wrapper">
+            <a class="footer-main__social-link" href="#">
+              <svg class="footer-main__social-img" width="20" height="20">
+                <use xlink:href="images/icons/stack.svg#vk-icon"></use>
+              </svg>
+            </a>
+            <a class="footer-main__social-link" href="#">
+              <svg class="footer-main__social-img" width="20" height="20">
+                <use xlink:href="images/icons/stack.svg#pinterest-icon"></use>
+              </svg>
+            </a>
+            <a class="footer-main__social-link" href="#">
+              <svg class="footer-main__social-img" width="20" height="20">
+                <use xlink:href="images/icons/stack.svg#ok-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="footer__section footer-e-shop">
+          <h4 class="footer-e-shop__title">Интернет-магазин</h4>
+          <a class="footer-e-shop__link" href="#">
+            Каталог
+          </a>
+          <a class="footer-e-shop__link" href="#">
+            Доставка
+          </a>
+          <a class="footer-e-shop__link" href="#">
+            Способы оплаты
+          </a>
+          <a class="footer-e-shop__link" href="#">
+            О нас
+          </a>
+        </section>
+
+        <section class="footer__section footer-media">
+          <h4 class="footer-media__title">Медиа</h4>
+          <a class="footer-media__link" href="#">
+            Блог
+          </a>
+          <a class="footer-media__link" href="#">
+            Информация для СМИ
+          </a>
+          <a class="footer-media__link" href="#">
+            Правовая информация
+          </a>
+        </section>
+        <section class="footer__section footer-contacts">
+          <h4 class="footer-contacts__title">Контакты</h4>
+          <a class="footer-contacts__link footer-contacts__link--address" href="#">
+            Санкт-Петербург, набережная реки Карповки, дом 5
+          </a>
+          <a class="footer-contacts__link footer-contacts__link--phone" href="#">
+            +7 (999) 999-99-99
+          </a>
+        </section>
+        <section class="footer__section footer-development">
+          <a class="footer-development__link" href="#">
+            Разработано в HTML Academy
+            <svg class="footer-development__img" width="12" height="16">
+              <use xlink:href="images/icons/stack.svg#html-academy-icon"></use>
+            </svg>
+          </a>
+        </section>
+      </div>
+    </footer>
+  </div>
   <script src="js/script.js" defer></script>
 </body>
 
