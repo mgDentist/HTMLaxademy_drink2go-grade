@@ -9,13 +9,15 @@
 </head>
 
 <body class="page__body">
-  <div class="page__wrapper--header">
-    <header class="header">
+
+  <header class="header">
+    <div class="header__wrapper">
       <div class="header__left-wrapper">
         <picture>
           <source media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" width="170" height="36">
           <source media="(min-width: 768px)" srcset="./images/logo-laptop.svg" width="82" height="36">
-          <img class="" src="./images/logo-mobile.svg" width="32" height="36" alt="Логотип компании Drink2Go">
+          <img class="header__logo" src="./images/logo-mobile.svg" width="32" height="36"
+            alt="Логотип компании Drink2Go">
         </picture>
         <span class="header__left-span">Интернет-магазин кофейных напитков</span>
       </div>
@@ -53,8 +55,10 @@
           </li>
         </ul>
       </nav>
-    </header>
-  </div>
+    </div>
+  </header>
+
+
   <script src="js/script.js" defer></script>
 </body>
 

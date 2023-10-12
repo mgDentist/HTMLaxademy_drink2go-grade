@@ -5,162 +5,162 @@
 }
 
 // шрифты
-@mixin slider-title-desktop {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 80px;
-  letter-spacing: 1.12px;
-}
+// @mixin slider-title-desktop {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 56px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 80px;
+//   letter-spacing: 1.12px;
+// }
 
-@mixin slider-title-tablet {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 80px;
-  letter-spacing: 1.12px;
-}
+// @mixin slider-title-tablet {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 56px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 80px;
+//   letter-spacing: 1.12px;
+// }
 
-@mixin slider-title-mobile {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
-  letter-spacing: 0.72px;
-}
+// @mixin slider-title-mobile {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 36px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 48px;
+//   letter-spacing: 0.72px;
+// }
 
-@mixin slider-description-desktop {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
+// @mixin slider-description-desktop {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 20px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 32px;
+// }
 
-@mixin slider-description-tablet {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
+// @mixin slider-description-tablet {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 20px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 32px;
+// }
 
-@mixin slider-description-mobile {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-}
+// @mixin slider-description-mobile {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 14px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 20px;
+// }
 
-@mixin h2-desktop {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 64px;
-}
+// @mixin h2-desktop {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 42px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 64px;
+// }
 
-@mixin h2-tablet {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 64px;
-}
+// @mixin h2-tablet {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 42px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 64px;
+// }
 
-@mixin h2-mobile {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-}
+// @mixin h2-mobile {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 24px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 36px;
+// }
 
-@mixin h3-desktop {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-}
+// @mixin h3-desktop {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 24px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 36px;
+// }
 
-@mixin h3-tablet {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-}
+// @mixin h3-tablet {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 24px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 36px;
+// }
 
-@mixin h3-mobile {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px;
-}
+// @mixin h3-mobile {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 18px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 32px;
+// }
 
-@mixin h4 {
-  color: $base-primary;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0.28px;
-}
+// @mixin h4 {
+//   color: $base-primary;
+//   font-family: Montserrat;
+//   font-size: 14px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 20px;
+//   letter-spacing: 0.28px;
+// }
 
-@mixin price {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-}
+// @mixin price {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 20px;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: 32px;
+// }
 
-@mixin old-price {
-  color: $base-primary;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-  text-decoration-line: strikethrough;
-}
+// @mixin old-price {
+//   color: $base-primary;
+//   font-family: Montserrat;
+//   font-size: 16px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 32px;
+//   text-decoration-line: strikethrough;
+// }
 
-@mixin label {
-  color: $base-black;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-}
+// @mixin label {
+//   color: $base-black;
+//   font-family: Montserrat;
+//   font-size: 16px;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: 24px;
+// }
 
-@mixin badge {
-  color: $base-primary;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.48px;
-  text-transform: uppercase;
-}
+// @mixin badge {
+//   color: $base-primary;
+//   font-family: Montserrat;
+//   font-size: 12px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: 16px;
+//   letter-spacing: 0.48px;
+//   text-transform: uppercase;
+// }
