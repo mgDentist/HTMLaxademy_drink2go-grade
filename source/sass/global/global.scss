@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  // outline: 1px solid lightgreen;
+  outline: 1px solid lightgreen;
 }
 
 a {
@@ -14,13 +14,15 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   margin: 0;
 }
 
 button {
   background-color: transparent;
   border: none;
+  padding: 0;
 }
 
 img,

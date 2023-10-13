@@ -12,11 +12,16 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
   font-family: Montserrat, sans-serif;
   font-style: normal;
-
   color: $base-black;
   background-color: $base-white;
 
+  @media (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
 }

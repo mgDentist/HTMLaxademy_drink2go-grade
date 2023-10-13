@@ -1,12 +1,12 @@
 .footer__wrapper {
-  width: 320px;
-  margin: 0 auto;
+  // width: 320px;
+  // margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   background-color: $base-white;
 
   @media (min-width: $tablet) {
-    width: $tablet;
+    // width: $tablet;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
@@ -18,8 +18,8 @@
   }
 
   @media (min-width: $desktop) {
-    width: $desktop;
-    display: grid;
+    // width: $desktop;
+    // display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "main e-shop media contacts"
