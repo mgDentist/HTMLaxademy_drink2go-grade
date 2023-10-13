@@ -16,12 +16,10 @@
 
   &--lavander {
     background-color: $lavender-latte;
-    display: none;
   }
 
   &--triple {
     background-color: $bg-espresso;
-    display: none;
   }
 
   @media (min-width: $tablet) {
@@ -34,6 +32,10 @@
     flex-direction: row;
     gap: 30px;
   }
+}
+
+.slider__slide--hidden {
+  display: none;
 }
 
 .slider__inner-wrapper {
@@ -59,6 +61,7 @@
 
 .slider__description {
   @include slider-description-mobile;
+  min-height: 100px; //надо поправить отображение текста в блоке
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {
@@ -86,6 +89,7 @@
   line-height: 24px;
   background-color: $base-primary;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .slider__img {
