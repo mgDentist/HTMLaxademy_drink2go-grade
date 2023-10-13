@@ -71,23 +71,23 @@
 //   line-height: 64px;
 // }
 
-// @mixin h2-tablet {
-//   color: $base-black;
-//   font-family: Montserrat;
-//   font-size: 42px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: 64px;
-// }
+@mixin h2-tablet {
+  color: $base-black;
+  font-family: Montserrat, sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
 
-// @mixin h2-mobile {
-//   color: $base-black;
-//   font-family: Montserrat;
-//   font-size: 24px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: 36px;
-// }
+@mixin h2-mobile {
+  color: $base-black;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
 
 // @mixin h3-desktop {
 //   color: $base-black;
@@ -98,23 +98,23 @@
 //   line-height: 36px;
 // }
 
-// @mixin h3-tablet {
-//   color: $base-black;
-//   font-family: Montserrat;
-//   font-size: 24px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: 36px;
-// }
+@mixin h3-tablet {
+  color: $base-black;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
 
-// @mixin h3-mobile {
-//   color: $base-black;
-//   font-family: Montserrat;
-//   font-size: 18px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: 32px;
-// }
+@mixin h3-mobile {
+  color: $base-black;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
 
 // @mixin h4 {
 //   color: $base-primary;
@@ -163,4 +163,23 @@
   line-height: 16px;
   letter-spacing: 0.48px;
   text-transform: uppercase;
+}
+
+@mixin features-subtitle-mobile {
+  color: $base-black;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@mixin features-subtitle-tablet {
+  color: $base-black;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
