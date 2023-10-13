@@ -227,10 +227,23 @@
       </section>
       <section class="main__section"></section>
       <section class="main__section map">
-      
+          <picture class="map__picture">
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="images/map-desktop.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="540">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="images/map-tablet.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="480">
+            <source type="image/webp" srcset="images/map-mobile.webp 1x, images/map-mobile@2x.webp 2x" width="320"
+              height="420">
+            <source media="(min-width: 1440px)" srcset="images/map-desktop.jpg 1x, images/map-desktop.jpg@2x.png 2x"
+              width="1440" height="540">
+            <source media="(min-width: 768px)" srcset="images/map-tablet.jpg 1x, images/map-tablet.jpg@2x.png 2x"
+              width="768" height="480">
+            <img class="map__img" src="images/map-mobile.jpg" srcset="images/map-mobile@2x.png 2x" width="320"
+              height="420"
+              alt="Карта с отметкой расположения организации по адресу Санкт-Петербург, набережная реки Карповки, дом 5.">
+          </picture>
       </section>
     </main>
-
 
     <footer class="footer">
       <div class="footer__wrapper">

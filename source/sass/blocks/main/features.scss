@@ -46,6 +46,11 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 30px;
   }
 }
 
@@ -100,8 +105,8 @@
 
   @media (min-width: $desktop) {
     padding: 76px 0 0;
-    gap: 30px;
-    flex-basis: 25%;
+    // flex-basis: 25%;
+    max-width: 317px;
   }
 }
 
