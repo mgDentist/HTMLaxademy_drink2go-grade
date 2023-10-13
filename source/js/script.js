@@ -51,7 +51,7 @@ const moveSlides = () => {
 
   //пагинация
   const changePaginationColor = () => {
-    paginationButtons.forEach((paginationButton, i) => {
+    paginationButtons.forEach((_, i) => {
       if (i === currentSlideIndex) {
         svgImages[i].style.fill = '#7859CF';
       } else {
@@ -116,10 +116,22 @@ const moveSlides = () => {
       } else {
         nextButton.removeAttribute('disabled');
       }
-
     });
   });
 };
 
 moveSlides();
 
+// paginationButtons.forEach((paginationButton, i) => {
+//   paginationButton.addEventListener('mouseover', () => {
+//     svgImages[i].style.fill = '#7859CF';
+//   });
+
+//   paginationButton.addEventListener('mouseout', () => {
+//     if (i !== currentSlideIndex) {
+//       svgImages[i].style.fill = '#ffffff';
+//     }
+//   });
+
+//   // остальной код...
+// });

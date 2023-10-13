@@ -90,6 +90,19 @@
   background-color: $base-primary;
   border-radius: 4px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
 }
 
 .slider__img {
@@ -110,6 +123,10 @@
   @media (min-width: $desktop) {
     order: 0;
   }
+}
+
+.slider__arrow {
+  fill: $base-primary;
 }
 
 .slider__button-prev {
@@ -196,8 +213,4 @@
   &:active {
     fill: $base-primary;
   }
-}
-
-.slider__arrow {
-  fill: $base-primary;
 }
