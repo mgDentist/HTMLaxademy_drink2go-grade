@@ -80,22 +80,22 @@
 
   &--speed::before {
     width: 50px;
-    background-image: url('../../../images/clock-icon.svg');
+    background-image: url('/images/clock-icon.svg');
   }
 
   &--convenience::before {
     width: 52px;
-    background-image: url('../../../images/pocket-icon.svg');
+    background-image: url('/images/pocket-icon.svg');
   }
 
   &--cheerfulness::before {
     width: 42px;
-    background-image: url('../../../images/flash-icon.svg');
+    background-image: url('/images/flash-icon.svg');
   }
 
   &--eco::before {
     width: 46px;
-    background-image: url('../../../images/leaf-icon.svg');
+    background-image: url('/images/leaf-icon.svg');
   }
 
   @media (min-width: $tablet) {
