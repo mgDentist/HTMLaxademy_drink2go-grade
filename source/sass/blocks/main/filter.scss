@@ -4,6 +4,19 @@
   gap: 30px;
   padding-top: 20px;
   padding-bottom: 4px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
 }
 
 .filter__fieldset {
@@ -12,6 +25,10 @@
   align-items: flex-start;
   gap: 20px;
   text-align: left;
+
+  @media (min-width: $tablet) {
+    flex-basis: 222px;
+  }
 }
 
 .filter__legend {
@@ -27,11 +44,20 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop) {
+    flex-grow: 0;
+  }
 }
 
 .filter__button {
-  @include features-subtitle-tablet;
-  max-width: 280px;
+  @include features-subtitle-tablet; //возможно лучше не использовать миксин тут, тк название не подходит
   padding: 8px 20px;
   border-radius: 4px;
 }
@@ -161,7 +187,7 @@
 }
 
 .filter__input--checkbox:checked+.filter__input-new-checkbox::after {
-left: 20px;
+  left: 20px;
 }
 
 .filter__input--checkbox:disabled+.filter__input-new-checkbox::before {

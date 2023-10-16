@@ -1,6 +1,15 @@
 .catalog-cards {
   padding-top: 36px;
   padding-bottom: 44px;
+
+  @media (min-width: $tablet) {
+    padding-top: 44px;
+    padding-bottom: 90px;
+  }
+
+  // @media (min-width: $desktop) {
+  //   max-width: 1011px;
+  // }
 }
 
 .catalog-cards__label {

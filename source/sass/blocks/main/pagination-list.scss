@@ -1,0 +1,110 @@
+.pagination-list {
+  @include clear-list;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: $tablet) {
+    max-width: 395px;
+    margin-left: auto;
+  }
+}
+
+.pagination-list__button-img {
+  fill: $base-primary;
+  transition: fill 0.25s ease-in-out;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.pagination-list__span {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    color: $base-primary;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.pagination-list__button {
+  padding: 15px;
+  border-radius: 4px;
+  background-color: $base-white;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $light-grey;
+    cursor: default;
+  }
+
+  &:hover .pagination-list__button-img,
+  &:focus .pagination-list__button-img {
+    fill: $base-white;
+  }
+
+  &:disabled .pagination-list__button-img {
+    fill: $base-white;
+  }
+
+  &:hover .pagination-list__span,
+  &:focus .pagination-list__span {
+    color: $base-white;
+  }
+
+  &:disabled .pagination-list__span {
+    color: $base-white;
+  }
+}
+
+
+.pagination-list__button-page {
+  padding: 8px 12px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $base-primary;
+  border-radius: 4px;
+  background-color: $base-white;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $base-white;
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    color: $base-white;
+    background-color: $light-grey;
+  }
+}
+
+.pagination-list__button-page--current {
+  font-weight: 600;
+  color: $base-black;
+  background-color: transparent;
+}
