@@ -1,0 +1,70 @@
+.catalog-list {
+  @include clear-list;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px 0 40px;
+}
+
+.catalog-list__item {
+  padding: 40px 20px 20px;
+  text-align: left;
+  background-color: $base-white;
+  border-radius: 4px;
+}
+
+.catalog-list__img {
+  margin: 0 auto 24px;
+}
+
+.catalog-list__title {
+  @include h3-mobile;
+  margin-bottom: 4px;
+}
+
+.catalog-list__description {
+  @include features-subtitle-mobile;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.catalog-list__price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-list__price {
+  @include price;
+}
+
+.catalog-list__bitton-img {
+  fill: $base-white;
+}
+
+.catalog-list__button {
+  display: flex;
+  gap: 6px;
+  padding: 8px 20px;
+  background-color: $base-primary;
+  border-radius: 4px;
+  color: $base-white;
+  transition: background-color 0.25s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
+}
+
+

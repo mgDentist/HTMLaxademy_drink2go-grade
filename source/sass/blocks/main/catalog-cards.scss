@@ -1,0 +1,26 @@
+.catalog-cards {
+  padding-top: 36px;
+  padding-bottom: 44px;
+}
+
+.catalog-cards__label {
+  @include label;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.catalog-cards__select {
+  @include label;
+  color: $base-primary;
+  min-width: 145px;
+  padding: 4px 0px 4px 10px;
+  text-transform: lowercase;
+  background-image: url("/images/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-color: transparent;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+}

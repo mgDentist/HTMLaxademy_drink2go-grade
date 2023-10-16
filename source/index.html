@@ -293,11 +293,12 @@
               <button class="filter__button filter__button--reset" type="reset">Сбросить</button>
             </div>
           </form>
+
           <div class="catalog__section catalog-cards">
             <div class="catalog-cards__sorting">
               <label class="catalog-cards__label">
                 Сортировка:
-                <select class="catalog-cards__select" name="sorting">
+                <select class="catalog-cards__select" name="sorting" id="sorting-select" aria-label="Сортировка">
                   <option value="default" class="catalog-cards__option">По умолчанию</option>
                   <option value="new" class="catalog-cards__option">Сначала новые</option>
                   <option value="popular" class="catalog-cards__option">Сначала популярные</option>
@@ -315,15 +316,17 @@
                     alt="Аллюминиевая банка напитка белая">
                 </picture>
                 <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
-                <span class="catalog-list__price">225&#8381;</span>
-                <button class="catalog-list__button">
-                  <svg class="catalog-list__bitton-img" width="20" height="16">
-                    <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
-                  </svg>
-                  <span>В корзину</span>
-                </button>
+                <div class="catalog-list__price-wrapper">
+                  <span class="catalog-list__price">225&#8381;</span>
+                  <button class="catalog-list__button">
+                    <svg class="catalog-list__bitton-img" width="20" height="16">
+                      <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
+                    </svg>
+                    <span>В корзину</span>
+                  </button>
+                </div>
               </li>
               <li class="catalog-list__item">
                 <picture class="catalog-list__picture">
@@ -335,15 +338,17 @@
                     alt="Аллюминиевая банка напитка белая">
                 </picture>
                 <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
-                <span class="catalog-list__price">225&#8381;</span>
-                <button class="catalog-list__button">
-                  <svg class="catalog-list__bitton-img" width="20" height="16">
-                    <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
-                  </svg>
-                  <span>В корзину</span>
-                </button>
+                <div class="catalog-list__price-wrapper">
+                  <span class="catalog-list__price">225&#8381;</span>
+                  <button class="catalog-list__button">
+                    <svg class="catalog-list__bitton-img" width="20" height="16">
+                      <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
+                    </svg>
+                    <span>В корзину</span>
+                  </button>
+                </div>
               </li>
               <li class="catalog-list__item">
                 <picture class="catalog-list__picture">
@@ -355,15 +360,17 @@
                     alt="Аллюминиевая банка напитка белая">
                 </picture>
                 <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
-                <span class="catalog-list__price">225&#8381;</span>
-                <button class="catalog-list__button">
-                  <svg class="catalog-list__bitton-img" width="20" height="16">
-                    <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
-                  </svg>
-                  <span>В корзину</span>
-                </button>
+                <div class="catalog-list__price-wrapper">
+                  <span class="catalog-list__price">225&#8381;</span>
+                  <button class="catalog-list__button">
+                    <svg class="catalog-list__bitton-img" width="20" height="16">
+                      <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
+                    </svg>
+                    <span>В корзину</span>
+                  </button>
+                </div>
               </li>
               <li class="catalog-list__item">
                 <picture class="catalog-list__picture">
@@ -374,15 +381,17 @@
                     alt="Аллюминиевая банка напитка белая">
                 </picture>
                 <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
-                <span class="catalog-list__price">225&#8381;</span>
-                <button class="catalog-list__button">
-                  <svg class="catalog-list__bitton-img" width="20" height="16">
-                    <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
-                  </svg>
-                  <span>В корзину</span>
-                </button>
+                <div class="catalog-list__price-wrapper">
+                  <span class="catalog-list__price">225&#8381;</span>
+                  <button class="catalog-list__button">
+                    <svg class="catalog-list__bitton-img" width="20" height="16">
+                      <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
+                    </svg>
+                    <span>В корзину</span>
+                  </button>
+                </div>
               </li>
               <li class="catalog-list__item">
                 <picture class="catalog-list__picture">
@@ -394,15 +403,17 @@
                     alt="Аллюминиевая банка напитка белая">
                 </picture>
                 <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
-                <span class="catalog-list__price">225&#8381;</span>
-                <button class="catalog-list__button">
-                  <svg class="catalog-list__bitton-img" width="20" height="16">
-                    <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
-                  </svg>
-                  <span>В корзину</span>
-                </button>
+                <div class="catalog-list__price-wrapper">
+                  <span class="catalog-list__price">225&#8381;</span>
+                  <button class="catalog-list__button">
+                    <svg class="catalog-list__bitton-img" width="20" height="16">
+                      <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
+                    </svg>
+                    <span>В корзину</span>
+                  </button>
+                </div>
               </li>
               <li class="catalog-list__item">
                 <picture class="catalog-list__picture">
@@ -414,8 +425,9 @@
                     alt="Аллюминиевая банка напитка белая">
                 </picture>
                 <h3 class="catalog-list__title">Декаф Флэт Уайт</h3>
-                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                <p class="catalog-list__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
                 </p>
+                <div class="catalog-list__price-wrapper">
                 <span class="catalog-list__price">225&#8381;</span>
                 <button class="catalog-list__button">
                   <svg class="catalog-list__bitton-img" width="20" height="16">
@@ -423,6 +435,31 @@
                   </svg>
                   <span>В корзину</span>
                 </button>
+              </div>
+              </li>
+            </ul>
+            <ul class="catalog-cards__pagination pagination-list">
+              <li class="pagination-list__item">
+                <button class="pagination-catalog__button pagination-catalog__button--prev" type="button"></button>
+              </li>
+              <li class="pagination-list__item">
+                <a class="pagination-list__link" href="#">
+                  <span class="pagination-list__number">1</span>
+                </a>
+              </li>
+              <li class="pagination-list__item">
+                <a class="pagination-list__link pagination-list__link--current" href="#">
+                  <span class="pagination-list__number">2</span>
+                </a>
+              </li>
+              <li class="pagination-list__item">
+                <a class="pagination-list__link" href="#">
+                  <span class="pagination-list__number">3</span>
+                </a>
+              </li>
+
+              <li class="pagination-list__item">
+                <button class="pagination-catalog__button pagination-catalog__button--next" type="button"></button>
               </li>
             </ul>
           </div>
