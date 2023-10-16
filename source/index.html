@@ -93,7 +93,8 @@
             <div class="slider__inner-wrapper">
               <span class="slider__badge">Новинка!</span>
               <h3 class="slider__title">Декаф Флэт Уайт</h3>
-              <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
+              <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                — то, что нужно для расслабления после тяжёлого рабочего дня
               </p>
               <span class="slider__old-price">295&#8381;</span>
               <span class="slider__new-price">225&#8381;</span>
@@ -125,7 +126,8 @@
             <div class="slider__inner-wrapper">
               <span class="slider__badge">Новинка!</span>
               <h3 class="slider__title">Тройной Эспрессо</h3>
-              <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+              <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из
+                Колумбии покажет вам, что такое настоящая бодрость
               </p>
               <span class="slider__old-price">395&#8381;</span>
               <span class="slider__new-price">375&#8381;</span>
@@ -235,61 +237,74 @@
 
             <fieldset class="filter__fieldset">
               <legend class="filter__legend">Наличие молока</legend>
-              <label for="" class="filter__label">
-                <input type="radio" class="filter__input filter__input--radio" name="milk" value="doesnt-matter">
+              <label class="filter__label">
+                <input type="radio" class="filter__input filter__input--radio visually-hidden" name="milk" value="doesnt-matter" checked>
+                <span class="filter__input-new-radio" tabindex="0"></span>
                 <span class="filter__span">Неважно</span>
               </label>
-              <label for="" class="filter__label">
-                <input type="radio" class="filter__input filter__input--radio" name="milk" value="animal-only">
+              <label class="filter__label">
+                <input type="radio" class="filter__input filter__input--radio visually-hidden" name="milk" value="animal-only">
+                <span class="filter__input-new-radio" tabindex="0"></span>
                 <span class="filter__span">Только животное</span>
               </label>
-              <label for="" class="filter__label">
-                <input type="radio" class="filter__input filter__input--radio" name="milk" value="plant-only">
+              <label class="filter__label">
+                <input type="radio" class="filter__input filter__input--radio visually-hidden" name="milk" value="plant-only">
+                <span class="filter__input-new-radio"></span>
                 <span class="filter__span">Только растительное</span>
               </label>
-              <label for="" class="filter__label">
-                <input type="radio" class="filter__input filter__input--radio" name="milk" value="no-milk">
+              <label class="filter__label">
+                <input type="radio" class="filter__input filter__input--radio visually-hidden" name="milk" value="no-milk" disabled>
+                <span class="filter__input-new-radio"></span>
                 <span class="filter__span">Без молока</span>
               </label>
             </fieldset>
 
             <fieldset class="filter__fieldset">
               <legend class="filter__legend">Страна произрастания</legend>
-              <label for="" class="filter__label">
-                <input type="checkbox" class="filter__input filter__input--radio" name="country" value="brasil">
+              <label class="filter__label filter__label--country">
+                <input type="checkbox" class="filter__input filter__input--checkbox visually-hidden" name="country" value="brasil" checked>
+                <span class="filter__input-new-checkbox"></span>
                 <span class="filter__span">Бразилия</span>
               </label>
-              <label for="" class="filter__label">
-                <input type="checkbox" class="filter__input filter__input--radio" name="country" value="Ethiopia">
+              <label class="filter__label filter__label--country">
+                <input type="checkbox" class="filter__input filter__input--checkbox visually-hidden" name="country" value="Ethiopia">
+                <span class="filter__input-new-checkbox"></span>
                 <span class="filter__span">Эфиопия</span>
               </label>
-              <label for="" class="filter__label">
-                <input type="checkbox" class="filter__input filter__input--radio" name="country" value="colombia">
+              <label class="filter__label filter__label--country">
+                <input type="checkbox" class="filter__input filter__input--checkbox visually-hidden" name="country" value="colombia">
+                <span class="filter__input-new-checkbox"></span>
                 <span class="filter__span">Колумбия</span>
               </label>
-              <label for="" class="filter__label">
-                <input type="checkbox" class="filter__input filter__input--radio" name="country" value="costa-rica">
+              <label class="filter__label filter__label--country">
+                <input type="checkbox" class="filter__input filter__input--checkbox visually-hidden" name="country" value="costa-rica">
+                <span class="filter__input-new-checkbox"></span>
                 <span class="filter__span">Коста-Рика</span>
               </label>
-              <label for="" class="filter__label">
-                <input type="checkbox" class="filter__input filter__input--radio" name="country" value="peru">
+              <label class="filter__label filter__label--country">
+                <input type="checkbox" class="filter__input filter__input--checkbox visually-hidden" name="country" value="peru" disabled>
+                <span class="filter__input-new-checkbox"></span>
                 <span class="filter__span">Перу</span>
               </label>
             </fieldset>
-            <button class="filter__button" type="submit">Применить</button>
-            <button class="filter__button" type="reset">Сбросить</button>
+
+            <div class="filter__button-wrapper">
+              <button class="filter__button filter__button--submit" type="submit">Применить</button>
+              <button class="filter__button filter__button--reset" type="reset">Сбросить</button>
+            </div>
           </form>
-          <div class="catalog__section catalog">
-            <div class="catalog__sorting">
-              <label class="catalog__label">
-                <select class="catalog__select" name="sorting">
-                  <option value="default" class="catalog__option">По умолчанию</option>
-                  <option value="new" class="catalog__option">Сначала новые</option>
-                  <option value="popular" class="catalog__option">Сначала популярные</option>
+          <div class="catalog__section catalog-cards">
+            <div class="catalog-cards__sorting">
+              <label class="catalog-cards__label">
+                Сортировка:
+                <select class="catalog-cards__select" name="sorting">
+                  <option value="default" class="catalog-cards__option">По умолчанию</option>
+                  <option value="new" class="catalog-cards__option">Сначала новые</option>
+                  <option value="popular" class="catalog-cards__option">Сначала популярные</option>
                 </select>
               </label>
             </div>
-            <ul class="catalog__list catalog-list">
+            <ul class="catalog-cards__list catalog-list">
               <li class="catalog-list__item">
                 <picture class="catalog-list__picture">
                   <source type="image/webp"
@@ -352,9 +367,8 @@
               </li>
               <li class="catalog-list__item">
                 <picture class="catalog-list__picture">
-                  <source type="image/webp"
-                    srcset="images/catalog/can-pink.webp 1x, images/catalog/can-pink@2x.webp 2x" width="130"
-                    height="188">
+                  <source type="image/webp" srcset="images/catalog/can-pink.webp 1x, images/catalog/can-pink@2x.webp 2x"
+                    width="130" height="188">
                   <img class="catalog-list__img" src="images/catalog/can-pink.png"
                     srcset="images/catalog/can-pink@2x.png 2x" width="130" height="188"
                     alt="Аллюминиевая банка напитка белая">
@@ -415,21 +429,21 @@
         </div>
       </section>
       <section class="main__section map">
-          <picture class="map__picture">
-            <source type="image/webp" media="(min-width: 1440px)"
-              srcset="images/map-desktop.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="540">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="images/map-tablet.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="480">
-            <source type="image/webp" srcset="images/map-mobile.webp 1x, images/map-mobile@2x.webp 2x" width="320"
-              height="420">
-            <source media="(min-width: 1440px)" srcset="images/map-desktop.jpg 1x, images/map-desktop.jpg@2x.png 2x"
-              width="1440" height="540">
-            <source media="(min-width: 768px)" srcset="images/map-tablet.jpg 1x, images/map-tablet.jpg@2x.png 2x"
-              width="768" height="480">
-            <img class="map__img" src="images/map-mobile.jpg" srcset="images/map-mobile@2x.png 2x" width="320"
-              height="420"
-              alt="Карта с отметкой расположения организации по адресу Санкт-Петербург, набережная реки Карповки, дом 5.">
-          </picture>
+        <picture class="map__picture">
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="images/map-desktop.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="540">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="images/map-tablet.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="480">
+          <source type="image/webp" srcset="images/map-mobile.webp 1x, images/map-mobile@2x.webp 2x" width="320"
+            height="420">
+          <source media="(min-width: 1440px)" srcset="images/map-desktop.jpg 1x, images/map-desktop.jpg@2x.png 2x"
+            width="1440" height="540">
+          <source media="(min-width: 768px)" srcset="images/map-tablet.jpg 1x, images/map-tablet.jpg@2x.png 2x"
+            width="768" height="480">
+          <img class="map__img" src="images/map-mobile.jpg" srcset="images/map-mobile@2x.png 2x" width="320"
+            height="420"
+            alt="Карта с отметкой расположения организации по адресу Санкт-Петербург, набережная реки Карповки, дом 5.">
+        </picture>
       </section>
     </main>
 

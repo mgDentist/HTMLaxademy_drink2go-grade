@@ -145,14 +145,14 @@
   text-decoration: line-through;
 }
 
-// @mixin label {
-//   color: $base-black;
-//   font-family: Montserrat;
-//   font-size: 16px;
-//   font-style: normal;
-//   font-weight: 600;
-//   line-height: 24px;
-// }
+@mixin label {
+  color: $base-black;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
 
 @mixin badge {
   color: $base-primary;

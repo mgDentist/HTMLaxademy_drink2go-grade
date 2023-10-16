@@ -1,0 +1,173 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+}
+
+.filter__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+}
+
+.filter__legend {
+  @include label;
+  margin-bottom: 20px;
+}
+
+.filter__span {
+  @include features-subtitle-tablet;
+}
+
+.filter__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter__button {
+  @include features-subtitle-tablet;
+  max-width: 280px;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.filter__button--submit {
+  color: $base-white;
+  background-color: $base-primary;
+  transition: background-color 0.25s ease-in-out;
+
+  &:hover {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+    cursor: default;
+  }
+}
+
+.filter__button--reset {
+  color: $base-primary;
+  background-color: $base-white;
+  transition: color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+
+  &:hover {
+    color: $base-white;
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    color: $base-white;
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    color: $base-white;
+    background-color: $light-grey;
+    cursor: default;
+  }
+}
+
+.filter__label {
+  position: relative;
+  padding-left: 36px;
+  cursor: pointer; //отключить на disabled
+}
+
+.filter__input-new-radio {
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    background-color: $base-white;
+    border-radius: 50%;
+    border: 2px solid $base-grey;
+    transition: border 0.25s ease-in-out;
+  }
+}
+
+.filter__input--radio:checked+.filter__input-new-radio::before {
+  z-index: 5;
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $base-primary;
+  top: 4px;
+  left: 4px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.filter__input--radio:checked+.filter__input-new-radio::after {
+  border: 2px solid $base-primary;
+}
+
+.filter__input--radio:disabled+.filter__input-new-radio::after {
+  border: 2px solid $light-grey;
+}
+
+.filter__input--radio:disabled+.filter__input-new-radio+.filter__span {
+  color: $base-grey;
+}
+
+.filter__label--country {
+  padding-left: 52px;
+}
+
+.filter__input-new-checkbox {
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 42px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    background-color: $base-grey;
+    border-radius: 12px;
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    background-color: $base-white;
+    border-radius: 12px;
+    transition: left 0.25s ease-in-out;
+  }
+}
+
+.filter__input--checkbox:checked+.filter__input-new-checkbox::before {
+  background-color: $base-primary;
+}
+
+.filter__input--checkbox:checked+.filter__input-new-checkbox::after {
+left: 20px;
+}
+
+.filter__input--checkbox:disabled+.filter__input-new-checkbox::before {
+  background-color: $light-grey;
+}
+
+.filter__input--checkbox:disabled+.filter__input-new-checkbox+.filter__span {
+  color: $base-grey;
+}

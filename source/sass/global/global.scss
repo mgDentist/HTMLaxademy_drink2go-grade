@@ -23,6 +23,7 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 img,
@@ -31,6 +32,12 @@ svg {
   height: auto;
   object-fit: contain;
   display: block;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .visually-hidden {
