@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop) {
     padding-top: 100px;
-    padding-bottom: 120px;
+    padding-bottom: 109px;
   }
 }
 
@@ -37,6 +37,10 @@
   @include badge;
   display: block;
   margin-bottom: 6px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 3px;
+  }
 }
 
 .catalog__title {

@@ -5,6 +5,10 @@
     padding-top: 41px;
     padding-bottom: 10px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 35px;
+  }
 }
 
 .catalog-cards__sorting {

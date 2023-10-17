@@ -17,6 +17,7 @@
     flex-direction: column;
     padding-top: 40px;
     padding-bottom: 60px;
+    row-gap: 32px;
   }
 }
 
@@ -35,6 +36,10 @@
   &--country {
     @media (min-width: $tablet) {
       margin-left: 7px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 0;
     }
   }
 }
@@ -56,14 +61,25 @@
 
   @media (min-width: $desktop) {
     flex-grow: 0;
+    padding-top: 7px;
   }
 }
 
 .filter__button {
-  @include features-subtitle-tablet; //возможно лучше не использовать миксин тут, тк название не подходит
-  letter-spacing: 1px;
   padding: 8px 20px;
+  color: $base-black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
   border-radius: 4px;
+
+  @media (min-width: $desktop) {
+    min-width: 149px;
+    padding: 8px 30px;
+  }
 }
 
 .filter__button--submit {
@@ -188,6 +204,10 @@
   @media (min-width: $tablet) {
     padding-left: 65px;
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 53px;
+  }
 }
 
 .filter__input-new-checkbox {
@@ -208,6 +228,10 @@
       @media (min-width: $tablet) {
         left: 11px;
       }
+
+      @media (min-width: $desktop) {
+        left: 0px;
+      }
   }
 
   &::after {
@@ -224,6 +248,10 @@
 
     @media (min-width: $tablet) {
       left: 13px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 2px;
     }
   }
 }
@@ -244,6 +272,10 @@
 
   @media (min-width: $tablet) {
     left: 31px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 20px;
   }
 }
 

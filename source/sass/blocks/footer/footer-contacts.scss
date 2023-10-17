@@ -36,6 +36,10 @@
 
   &:not(:last-child) {
     margin-bottom: 16px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 18px;
+    }
   }
 
   &::before {
@@ -62,5 +66,10 @@
 
   &:active {
     color: $primary-darker;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 305px;
+    letter-spacing: 0;
   }
 }

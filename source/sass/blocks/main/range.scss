@@ -4,6 +4,10 @@
   @media (min-width: $tablet) {
     width: 223px;
   }
+
+  @media (min-width: $desktop) {
+    width: 318px;
+  }
 }
 
 .range__scale {
@@ -26,6 +30,10 @@
 
   @media (min-width: $tablet) {
     width: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 296px;
   }
 }
 
@@ -118,5 +126,9 @@
   @media (min-width: $tablet) {
     width: 87px;
     padding: 6px 10px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 135px;
   }
 }

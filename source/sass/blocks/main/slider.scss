@@ -41,6 +41,8 @@
 .slider__inner-wrapper {
   @media (min-width: $desktop) {
     max-width: 625px;
+    margin-top: -6px;
+    text-align: left;
   }
 }
 
@@ -70,6 +72,11 @@
     @include slider-description-tablet;
     letter-spacing: 1.3px;
     margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 610px;
+    margin-bottom: 36px;
   }
 }
 
@@ -201,7 +208,7 @@
     justify-content: center;
     gap: 8px;
     position: absolute;
-    bottom: 36px;
+    bottom: 60px;
     left: 0;
     right: 0;
   }

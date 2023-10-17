@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop) {
-    gap: 20px;
+    gap: 12px;
   }
 }
 
@@ -61,6 +61,10 @@
     padding: 32px 18px 30px 28px;
   }
 
+  @media (min-width: $desktop) {
+    padding: 32px 27px 30px 27px;
+  }
+
   &--current {
     @media (min-width: $tablet) {
       position: relative;
@@ -77,6 +81,10 @@
       bottom: 0;
       left: 0;
       background-color: $base-primary;
+    }
+
+    @media (min-width: $desktop) {
+      bottom: -1px;
     }
   }
 }

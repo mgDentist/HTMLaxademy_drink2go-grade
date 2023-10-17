@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 80px;
+    margin-bottom: 78px;
   }
 }
 
@@ -125,6 +125,7 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 10px;
+    text-align: center;
   }
 }
 
@@ -134,5 +135,9 @@
   @media (min-width: $tablet) {
     @include features-subtitle-tablet;
     text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
   }
 }

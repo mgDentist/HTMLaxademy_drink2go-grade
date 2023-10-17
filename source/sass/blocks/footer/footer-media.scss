@@ -43,4 +43,9 @@
   &:active {
     color: $primary-darker;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 2px;
+    letter-spacing: 0;
+  }
 }
