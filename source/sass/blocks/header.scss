@@ -36,8 +36,6 @@
       display: none;
     }
   }
-
-  @media (min-width: $tablet) {}
 }
 
 .header__svg {
@@ -88,7 +86,7 @@
 
 .header__right-span {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -103,7 +101,7 @@
 .header__left-span {
   max-width: 126px;
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;

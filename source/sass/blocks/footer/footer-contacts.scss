@@ -36,7 +36,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 13px;
     height: 16px;
@@ -45,11 +45,11 @@
   }
 
   &--address::before {
-    background-image: url('/images/address-icon.svg');
+    background-image: url("/images/address-icon.svg");
   }
 
   &--phone::before {
-    background-image: url('/images/phone-icon.svg');
+    background-image: url("/images/phone-icon.svg");
   }
 
   &:hover,

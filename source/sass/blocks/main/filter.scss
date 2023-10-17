@@ -25,7 +25,6 @@
   align-items: flex-start;
   gap: 20px;
   text-align: left;
-
 }
 
 .filter__legend {
@@ -81,8 +80,9 @@
 .filter__button--reset {
   color: $base-primary;
   background-color: $base-white;
-  transition: color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out;
+  transition:
+    color 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
 
   &:hover {
     color: $base-white;
@@ -108,10 +108,9 @@
 }
 
 .filter__input-new-radio {
-
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 24px;
     height: 24px;
     top: 0;
@@ -124,7 +123,7 @@
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 16px;
     height: 16px;
     top: 4px;
@@ -135,43 +134,43 @@
   }
 }
 
-.filter__input--radio:hover+.filter__input-new-radio::before,
-.filter__input--radio:focus+.filter__input-new-radio::before {
+.filter__input--radio:hover + .filter__input-new-radio::before,
+.filter__input--radio:focus + .filter__input-new-radio::before {
   border: 2px solid $primary-lighter;
 }
 
-.filter__input--radio:hover+.filter__input-new-radio::after,
-.filter__input--radio:focus+.filter__input-new-radio::after {
+.filter__input--radio:hover + .filter__input-new-radio::after,
+.filter__input--radio:focus + .filter__input-new-radio::after {
   background-color: $primary-opacity;
 }
 
-.filter__input--radio:checked + .filter__input-new-radio:before {
+.filter__input--radio:checked + .filter__input-new-radio::before {
   border: 2px solid $base-primary;
 }
 
-.filter__input--radio:checked + .filter__input-new-radio:after {
+.filter__input--radio:checked + .filter__input-new-radio::after {
   background-color: $base-primary;
 }
 
-.filter__input--radio:disabled+.filter__input-new-radio::before {
+.filter__input--radio:disabled + .filter__input-new-radio::before {
   border: 2px solid $light-grey;
   background-color: $lighest-grey;
 }
 
-.filter__input--radio:disabled + .filter__input-new-radio+.filter__span {
+.filter__input--radio:disabled + .filter__input-new-radio + .filter__span {
   color: $base-grey;
 }
 
-.filter__input--radio:disabled:checked + .filter__input-new-radio+.filter__span {
+.filter__input--radio:disabled:checked + .filter__input-new-radio + .filter__span {
   color: $base-grey;
 }
 
-.filter__input--radio:disabled:checked+.filter__input-new-radio::before {
+.filter__input--radio:disabled:checked + .filter__input-new-radio::before {
   border: 2px solid $light-grey;
   background-color: $lighest-grey;
 }
 
-.filter__input--radio:disabled:checked+.filter__input-new-radio::after {
+.filter__input--radio:disabled:checked + .filter__input-new-radio::after {
   background-color: $light-grey;
 }
 
@@ -180,10 +179,9 @@
 }
 
 .filter__input-new-checkbox {
-
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 42px;
     height: 24px;
     top: 0;
@@ -191,13 +189,14 @@
     background-color: $base-grey;
     border: 2px solid $base-grey;
     border-radius: 12px;
-    transition: background-color 0.25s ease-in-out,
-                border 0.25s ease-in-out;
+    transition:
+      background-color 0.25s ease-in-out,
+      border 0.25s ease-in-out;
   }
 
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 20px;
     height: 20px;
     top: 50%;
@@ -209,43 +208,43 @@
   }
 }
 
-.filter__input--checkbox:hover+.filter__input-new-checkbox::before,
-.filter__input--checkbox:focus+.filter__input-new-checkbox::before {
+.filter__input--checkbox:hover + .filter__input-new-checkbox::before,
+.filter__input--checkbox:focus + .filter__input-new-checkbox::before {
   background-color: $primary-opacity;
   border: 2px solid $primary-lighter;
 }
 
-.filter__input--checkbox:checked+.filter__input-new-checkbox::before {
+.filter__input--checkbox:checked + .filter__input-new-checkbox::before {
   background-color: $base-primary;
   border: 2px solid $base-primary;
 }
 
-.filter__input--checkbox:checked+.filter__input-new-checkbox::after {
+.filter__input--checkbox:checked + .filter__input-new-checkbox::after {
   left: 19px;
 }
 
-.filter__input--checkbox:disabled+.filter__input-new-checkbox::before {
+.filter__input--checkbox:disabled + .filter__input-new-checkbox::before {
   background-color: $light-grey;
   border: 2px solid $light-grey;
 }
 
-.filter__input--checkbox:disabled+.filter__input-new-checkbox::after {
+.filter__input--checkbox:disabled + .filter__input-new-checkbox::after {
   background-color: $lighest-grey;
 }
 
-.filter__input--checkbox:disabled:checked+.filter__input-new-checkbox::before {
+.filter__input--checkbox:disabled:checked + .filter__input-new-checkbox::before {
   background-color: $light-grey;
   border: 2px solid $light-grey;
 }
 
-.filter__input--checkbox:disabled:checked+.filter__input-new-checkbox::after {
+.filter__input--checkbox:disabled:checked + .filter__input-new-checkbox::after {
   background-color: $base-grey;
 }
 
-.filter__input--checkbox:disabled+.filter__input-new-checkbox+.filter__span {
+.filter__input--checkbox:disabled + .filter__input-new-checkbox + .filter__span {
   color: $base-grey;
 }
 
-.filter__label+.filter__input:disabled {
+.filter__label + .filter__input:disabled {
   cursor: default;
 }

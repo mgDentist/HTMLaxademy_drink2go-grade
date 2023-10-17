@@ -1,5 +1,5 @@
 /* GLOBAL */
-@import "global/normalize.scss";
+// @import "global/normalize.scss";
 @import "global/mixins";
 @import "global/variables";
 @import "global/global";
@@ -9,12 +9,6 @@
 @import "blocks/page";
 @import "blocks/header";
 @import "blocks/nav-list";
-@import "blocks/footer/footer.scss";
-@import "blocks/footer/footer-main.scss";
-@import "blocks/footer/footer-e-shop.scss";
-@import "blocks/footer/footer-media.scss";
-@import "blocks/footer/footer-contacts.scss";
-@import "blocks/footer/footer-development.scss";
 @import "blocks/main/main.scss";
 @import "blocks/main/slider.scss";
 @import "blocks/main/features.scss";
@@ -25,3 +19,9 @@
 @import "blocks/main/catalog-cards.scss";
 @import "blocks/main/catalog-list.scss";
 @import "blocks/main/pagination-list.scss";
+@import "blocks/footer/footer.scss";
+@import "blocks/footer/footer-main.scss";
+@import "blocks/footer/footer-e-shop.scss";
+@import "blocks/footer/footer-media.scss";
+@import "blocks/footer/footer-contacts.scss";
+@import "blocks/footer/footer-development.scss";

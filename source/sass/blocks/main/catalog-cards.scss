@@ -34,11 +34,11 @@
   background-color: transparent;
   border: none;
   border-radius: 4px;
-  -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
-  transition: background-color 0.25s ease-in-out,
-              background-image 0.25s ease-in-out;
+  transition:
+    background-color 0.25s ease-in-out,
+    background-image 0.25s ease-in-out;
 
   &:hover {
     background-color: $base-secondary;

@@ -2,27 +2,30 @@
 
 @font-face {
   font-display: swap;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/montserrat-v26-cyrillic_latin-regular.woff2') format('woff2'),
-  url('fonts/montserrat-v26-cyrillic_latin-regular.woff') format('woff');
+  src:
+    url("fonts/montserrat-v26-cyrillic_latin-regular.woff2") format("woff2"),
+    url("fonts/montserrat-v26-cyrillic_latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  src: url('fonts/montserrat-v26-cyrillic_latin-500.woff2') format('woff2'),
-  url('fonts/montserrat-v26-cyrillic_latin-500.woff') format('woff');
+  src:
+    url("fonts/montserrat-v26-cyrillic_latin-500.woff2") format("woff2"),
+    url("fonts/montserrat-v26-cyrillic_latin-500.woff") format("woff");
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
-  src: url('fonts/montserrat-v26-cyrillic_latin-700.woff2') format('woff2'),
-  url('fonts/montserrat-v26-cyrillic_latin-700.woff') format('woff');
+  src:
+    url("fonts/montserrat-v26-cyrillic_latin-700.woff2") format("woff2"),
+    url("fonts/montserrat-v26-cyrillic_latin-700.woff") format("woff");
 }

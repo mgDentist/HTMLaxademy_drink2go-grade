@@ -60,7 +60,7 @@
   padding-bottom: 32px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 56px;
     top: 0;
@@ -80,22 +80,22 @@
 
   &--speed::before {
     width: 50px;
-    background-image: url('/images/clock-icon.svg');
+    background-image: url("/images/clock-icon.svg");
   }
 
   &--convenience::before {
     width: 52px;
-    background-image: url('/images/pocket-icon.svg');
+    background-image: url("/images/pocket-icon.svg");
   }
 
   &--cheerfulness::before {
     width: 42px;
-    background-image: url('/images/flash-icon.svg');
+    background-image: url("/images/flash-icon.svg");
   }
 
   &--eco::before {
     width: 46px;
-    background-image: url('/images/leaf-icon.svg');
+    background-image: url("/images/leaf-icon.svg");
   }
 
   @media (min-width: $tablet) {
@@ -105,7 +105,6 @@
 
   @media (min-width: $desktop) {
     padding: 76px 0 0;
-    // flex-basis: 25%;
     max-width: 317px;
   }
 }

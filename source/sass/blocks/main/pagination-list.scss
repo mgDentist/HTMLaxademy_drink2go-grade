@@ -27,7 +27,7 @@
     display: block;
     color: $base-primary;
     text-align: center;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -74,17 +74,17 @@
   }
 }
 
-
 .pagination-list__button-page {
   padding: 8px 12px;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: $base-primary;
   border-radius: 4px;
   background-color: $base-white;
   cursor: pointer;
-  transition: color 0.25s ease-in-out,
+  transition:
+    color 0.25s ease-in-out,
     background-color 0.25s ease-in-out;
 
   &:hover,

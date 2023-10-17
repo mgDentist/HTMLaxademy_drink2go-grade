@@ -5,19 +5,9 @@
 }
 
 // шрифты
-// @mixin slider-title-desktop {
-//   color: $base-black;
-//   font-family: Montserrat;
-//   font-size: 56px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: 80px;
-//   letter-spacing: 1.12px;
-// }
-
 @mixin slider-title-tablet {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
@@ -27,7 +17,7 @@
 
 @mixin slider-title-mobile {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -35,18 +25,9 @@
   letter-spacing: 0.72px;
 }
 
-// @mixin slider-description-desktop {
-//   color: $base-black;
-//   font-family: Montserrat;
-//   font-size: 20px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: 32px;
-// }
-
 @mixin slider-description-tablet {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -55,25 +36,16 @@
 
 @mixin slider-description-mobile {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
 }
 
-// @mixin h2-desktop {
-//   color: $base-black;
-//   font-family: Montserrat;
-//   font-size: 42px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: 64px;
-// }
-
 @mixin h2-tablet {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 42px;
   font-style: normal;
   font-weight: 700;
@@ -82,25 +54,16 @@
 
 @mixin h2-mobile {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
 }
 
-// @mixin h3-desktop {
-//   color: $base-black;
-//   font-family: Montserrat;
-//   font-size: 24px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: 36px;
-// }
-
 @mixin h3-tablet {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -109,26 +72,16 @@
 
 @mixin h3-mobile {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
 }
 
-// @mixin h4 {
-//   color: $base-primary;
-//   font-family: Montserrat;
-//   font-size: 14px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: 20px;
-//   letter-spacing: 0.28px;
-// }
-
 @mixin price {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -137,7 +90,7 @@
 
 @mixin old-price {
   color: $base-primary;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -147,7 +100,7 @@
 
 @mixin label {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -156,7 +109,7 @@
 
 @mixin badge {
   color: $base-primary;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -168,7 +121,7 @@
 @mixin features-subtitle-mobile {
   color: $base-black;
   text-align: center;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -177,7 +130,7 @@
 
 @mixin features-subtitle-tablet {
   color: $base-black;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

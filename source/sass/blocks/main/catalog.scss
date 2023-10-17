@@ -5,12 +5,12 @@
 
   @media (min-width: $tablet) {
     padding-top: 80px;
-    padding-top: 90px;
+    padding-bottom: 90px;
   }
 
   @media (min-width: $desktop) {
     padding-top: 100px;
-    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -26,7 +26,6 @@
 }
 
 .catalog__inner-wrapper {
-
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 318px 1011px;
