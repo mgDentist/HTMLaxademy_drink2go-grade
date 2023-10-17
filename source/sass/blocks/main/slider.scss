@@ -90,6 +90,7 @@
   background-color: $base-primary;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
 
   &:hover,
   &:focus {
@@ -204,6 +205,7 @@
 .slider__pagination-button {
   fill: $base-white;
   cursor: pointer;
+  transition: fill 0.25s ease-in-out;
 
   &:hover,
   &:focus {

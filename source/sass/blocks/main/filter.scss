@@ -112,7 +112,7 @@
 
 .filter__input-new-radio {
 
-  &::after {
+  &::before {
     position: absolute;
     content: '';
     width: 24px;
@@ -124,31 +124,58 @@
     border: 2px solid $base-grey;
     transition: border 0.25s ease-in-out;
   }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.25s ease-in-out;
+  }
 }
 
-.filter__input--radio:checked+.filter__input-new-radio::before {
-  z-index: 5;
-  position: absolute;
-  content: '';
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: $base-primary;
-  top: 4px;
-  left: 4px;
-  transition: background-color 0.25s ease-in-out;
+.filter__input--radio:hover+.filter__input-new-radio::before,
+.filter__input--radio:focus+.filter__input-new-radio::before {
+  border: 2px solid $primary-lighter;
 }
 
-.filter__input--radio:checked+.filter__input-new-radio::after {
+.filter__input--radio:hover+.filter__input-new-radio::after,
+.filter__input--radio:focus+.filter__input-new-radio::after {
+  background-color: $primary-opacity;
+}
+
+.filter__input--radio:checked + .filter__input-new-radio:before {
   border: 2px solid $base-primary;
 }
 
-.filter__input--radio:disabled+.filter__input-new-radio::after {
-  border: 2px solid $light-grey;
+.filter__input--radio:checked + .filter__input-new-radio:after {
+  background-color: $base-primary;
 }
 
-.filter__input--radio:disabled+.filter__input-new-radio+.filter__span {
+.filter__input--radio:disabled+.filter__input-new-radio::before {
+  border: 2px solid $light-grey;
+  background-color: $lighest-grey;
+}
+
+.filter__input--radio:disabled + .filter__input-new-radio+.filter__span {
   color: $base-grey;
+}
+
+.filter__input--radio:disabled:checked + .filter__input-new-radio+.filter__span {
+  color: $base-grey;
+}
+
+.filter__input--radio:disabled:checked+.filter__input-new-radio::before {
+  border: 2px solid $light-grey;
+  background-color: $lighest-grey;
+}
+
+.filter__input--radio:disabled:checked+.filter__input-new-radio::after {
+  background-color: $light-grey;
 }
 
 .filter__label--country {
@@ -165,8 +192,10 @@
     top: 0;
     left: 0;
     background-color: $base-grey;
+    border: 2px solid $base-grey;
     border-radius: 12px;
-    transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out,
+                border 0.25s ease-in-out;
   }
 
   &::after {
@@ -174,26 +203,52 @@
     content: '';
     width: 20px;
     height: 20px;
-    top: 2px;
-    left: 2px;
+    top: 50%;
+    left: 3px;
     background-color: $base-white;
     border-radius: 12px;
+    transform: translateY(-50%);
     transition: left 0.25s ease-in-out;
   }
 }
 
+.filter__input--checkbox:hover+.filter__input-new-checkbox::before,
+.filter__input--checkbox:focus+.filter__input-new-checkbox::before {
+  background-color: $primary-opacity;
+  border: 2px solid $primary-lighter;
+}
+
 .filter__input--checkbox:checked+.filter__input-new-checkbox::before {
   background-color: $base-primary;
+  border: 2px solid $base-primary;
 }
 
 .filter__input--checkbox:checked+.filter__input-new-checkbox::after {
-  left: 20px;
+  left: 19px;
 }
 
 .filter__input--checkbox:disabled+.filter__input-new-checkbox::before {
   background-color: $light-grey;
+  border: 2px solid $light-grey;
+}
+
+.filter__input--checkbox:disabled+.filter__input-new-checkbox::after {
+  background-color: $lighest-grey;
+}
+
+.filter__input--checkbox:disabled:checked+.filter__input-new-checkbox::before {
+  background-color: $light-grey;
+  border: 2px solid $light-grey;
+}
+
+.filter__input--checkbox:disabled:checked+.filter__input-new-checkbox::after {
+  background-color: $base-grey;
 }
 
 .filter__input--checkbox:disabled+.filter__input-new-checkbox+.filter__span {
   color: $base-grey;
+}
+
+.filter__label+.filter__input:disabled {
+  cursor: default;
 }

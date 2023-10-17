@@ -12,7 +12,7 @@
 
 .footer-development__img {
   fill: $base-grey;
-  transition: fill 0.3s ease-in-out;
+  transition: fill 0.25s ease-in-out;
 }
 
 .footer-development__link {
@@ -23,23 +23,23 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  transition: color 0.3s ease-in-out;
-
-  &:hover .footer-development__img,
-  &:focus .footer-development__img {
-    fill: $base-primary;
-  }
+  transition: color 0.25s ease-in-out;
 
   &:hover,
   &:focus {
     color: $base-primary;
   }
 
-  &:active .footer-development__img {
-    fill: $primary-darker;
-  }
-
   &:active {
     color: $primary-darker;
+  }
+
+  &:hover .footer-development__img,
+  &:focus .footer-development__img {
+    fill: $base-primary;
+  }
+
+  &:active .footer-development__img {
+    fill: $primary-darker;
   }
 }

@@ -128,17 +128,3 @@ const moveSlides = () => {
 };
 
 moveSlides();
-
-// paginationButtons.forEach((paginationButton, i) => {
-//   paginationButton.addEventListener('mouseover', () => {
-//     svgImages[i].style.fill = '#7859CF';
-//   });
-
-//   paginationButton.addEventListener('mouseout', () => {
-//     if (i !== currentSlideIndex) {
-//       svgImages[i].style.fill = '#ffffff';
-//     }
-//   });
-
-//   // остальной код...
-// });
