@@ -14,18 +14,21 @@ menuButton.addEventListener('click', () => {
 });
 
 // показ активной ссылки
-const links = document.querySelectorAll('.nav-list__link');
-
-links.forEach((link) => {
-  link.addEventListener('click', () => {
-    links.forEach((otherLink) => {
-      if (otherLink.classList.contains('nav-list__link--current')) {
-        otherLink.classList.remove('nav-list__link--current');
-      }
+const showActiveLinkNav = () => {
+  const links = document.querySelectorAll('.nav-list__link');
+  links.forEach((link) => {
+    link.addEventListener('click', () => {
+      links.forEach((otherLink) => {
+        if (otherLink.classList.contains('nav-list__link--current')) {
+          otherLink.classList.remove('nav-list__link--current');
+        }
+      });
+      link.classList.add('nav-list__link--current');
     });
-    link.classList.add('nav-list__link--current');
   });
-});
+};
+
+showActiveLinkNav();
 
 // слайдер
 const moveSlides = () => {
