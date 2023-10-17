@@ -2,10 +2,10 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Drink2Go</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-500.woff" as="font">
   <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-500.woff2" as="font">
   <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-700.woff" as="font">
@@ -20,8 +20,8 @@
       <div class="header__wrapper">
         <div class="header__left-wrapper">
           <picture>
-            <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="170" height="36">
-            <source media="(min-width: 768px)" srcset="images/logo-laptop.svg" width="82" height="36">
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="170" height="36">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-laptop.svg" width="82" height="36">
             <img class="header__logo" src="images/logo-mobile.svg" width="32" height="36"
               alt="Логотип компании Drink2Go">
           </picture>
@@ -29,15 +29,15 @@
         </div>
         <div class="header__right-wrapper">
           <a class="header__link" href="#">
-            <svg class="header__svg" width="16" height="16" aria-label="Нажмите для входа в личный кабинет">
-              <use xlink:href="images/icons/stack.svg#user-icon"></use>
+            <svg class="header__svg" width="16" height="16">
+              <use href="images/icons/stack.svg#user-icon"></use>
             </svg>
             <span class="header__right-span">Войти</span>
 
           </a>
           <a class="header__link" href="#">
-            <svg class="header__svg" width="16" height="16" aria-label="Нажмите для перехода в корзину">
-              <use xlink:href="images/icons/stack.svg#basket-icon"></use>
+            <svg class="header__svg" width="16" height="16">
+              <use href="images/icons/stack.svg#basket-icon"></use>
             </svg>
             <span class="header__right-span">Корзина</span>
           </a>
@@ -48,16 +48,16 @@
         <nav class="header__nav header__nav--closed">
           <ul class="header__list nav-list">
             <li class="nav-list__item">
-              <a href="#" class="nav-list__link nav-list__link--current">Главная</a>
+              <a class="nav-list__link nav-list__link--current" href="#">Главная</a>
             </li>
             <li class="nav-list__item">
-              <a href="#" class="nav-list__link">Каталог</a>
+              <a class="nav-list__link" href="#">Каталог</a>
             </li>
             <li class="nav-list__item">
-              <a href="#" class="nav-list__link">Доставка</a>
+              <a class="nav-list__link" href="#">Доставка</a>
             </li>
             <li class="nav-list__item">
-              <a href="#" class="nav-list__link">О нас</a>
+              <a class="nav-list__link" href="#">О нас</a>
             </li>
           </ul>
         </nav>
@@ -80,10 +80,10 @@
               <source type="image/webp"
                 srcset="images/slider/flat-white-mob.webp 1x, images/slider/flat-white-mob@2x.webp 2x" width="280"
                 height="280">
-              <source media="(min-width: 1440px)"
+              <source type="image/png" media="(min-width: 1440px)"
                 srcset="images/slider/flat-white-desktop.png 1x, images/slider/flat-white-desktop@2x.png 2x" width="600"
                 height="600">
-              <source media="(min-width: 768px)"
+              <source type="image/png" media="(min-width: 768px)"
                 srcset="images/slider/flat-white-tablet.png 1x, images/slider/flat-white-tablet@2x.png 2x" width="476"
                 height="476">
               <img class="slider__img" src="images/slider/flat-white-mob.png"
@@ -112,10 +112,10 @@
               <source type="image/webp"
                 srcset="images/slider/lavander-latte-mob.webp 1x, images/slider/lavander-latte-mob@2x.webp 2x"
                 width="280" height="280">
-              <source media="(min-width: 1440px)"
+              <source type="image/png" media="(min-width: 1440px)"
                 srcset="images/slider/lavander-latte-desktop.png 1x, images/slider/lavander-latte-desktop@2x.png 2x"
                 width="600" height="600">
-              <source media="(min-width: 768px)"
+              <source type="image/png" media="(min-width: 768px)"
                 srcset="images/slider/lavander-latte-tablet.png 1x, images/slider/lavander-latte-tablet@2x.png 2x"
                 width="476" height="476">
               <img class="slider__img" src="images/slider/lavander-latte-mob.png"
@@ -144,10 +144,10 @@
               <source type="image/webp"
                 srcset="images/slider/triple-espresso-mob.webp 1x, images/slider/triple-espresso-mob@2x.webp 2x"
                 width="280" height="280">
-              <source media="(min-width: 1440px)"
+              <source type="image/png" media="(min-width: 1440px)"
                 srcset="images/slider/triple-espresso-desktop.png 1x, images/slider/triple-espresso-desktop@2x.png 2x"
                 width="600" height="600">
-              <source media="(min-width: 768px)"
+              <source type="image/png" media="(min-width: 768px)"
                 srcset="images/slider/triple-espresso-tablet.png 1x, images/slider/triple-espresso-tablet@2x.png 2x"
                 width="476" height="476">
               <img class="slider__img" src="images/slider/triple-espresso-mob.png"
@@ -164,30 +164,30 @@
               <button class="slider__button" type="button">Заказать</button>
             </div>
           </div>
-          <button class="slider__button-prev slider-button-prev" type="button">
+          <button class="slider__button-prev slider-button-prev" type="button" aria-label="Перейти на предыдущий слайд">
             <svg class="slider__arrow" width="11" height="20">
-              <use xlink:href="images/icons/stack.svg#arrow-left"></use>
+              <use href="images/icons/stack.svg#arrow-left"></use>
             </svg>
           </button>
-          <button class="slider__button-next slider-button-next" type="button">
+          <button class="slider__button-next slider-button-next" type="button" aria-label="Перейти на следующий слайд">
             <svg class="slider__arrow" width="11" height="20">
-              <use xlink:href="images/icons/stack.svg#arrow-right"></use>
+              <use href="images/icons/stack.svg#arrow-right"></use>
             </svg>
           </button>
           <div class="slider__pagination slider-pagination">
-            <button class="slider__button-pagination" type="button">
+            <button class="slider__button-pagination" type="button" aria-label="Перейти на первый слайд">
               <svg class="slider__pagination-button" width="62" height="24">
-                <use xlink:href="images/icons/stack.svg#pagination-button"></use>
+                <use href="images/icons/stack.svg#pagination-button"></use>
               </svg>
             </button>
-            <button class="slider__button-pagination" type="button">
+            <button class="slider__button-pagination" type="button" aria-label="Перейти на второй слайд">
               <svg class="slider__pagination-button" width="62" height="24">
-                <use xlink:href="images/icons/stack.svg#pagination-button"></use>
+                <use href="images/icons/stack.svg#pagination-button"></use>
               </svg>
             </button>
-            <button class="slider__button-pagination" type="button">
+            <button class="slider__button-pagination" type="button" aria-label="Перейти на третий слайд">
               <svg class="slider__pagination-button" width="62" height="24">
-                <use xlink:href="images/icons/stack.svg#pagination-button"></use>
+                <use href="images/icons/stack.svg#pagination-button"></use>
               </svg>
             </button>
           </div>
@@ -248,7 +248,7 @@
                       <input class="range__input range__input--from" type="number" name="min-price" placeholder="0">
                     </label>
                     <svg class="catalog-list__bitton-img" width="8" height="2">
-                      <use xlink:href="images/icons/stack.svg#input-hyphen"></use>
+                      <use href="images/icons/stack.svg#input-hyphen"></use>
                     </svg>
                     <label class="range__label">
                       <input class="range__input range__input--to" type="number" name="max-price" value="900" >
@@ -260,25 +260,25 @@
               <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Наличие молока</legend>
                 <label class="filter__label">
-                  <input type="radio" class="filter__input filter__input--radio visually-hidden" name="milk"
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="milk"
                     value="doesnt-matter" checked>
                   <span class="filter__input-new-radio" tabindex="0"></span>
                   <span class="filter__span">Неважно</span>
                 </label>
                 <label class="filter__label">
-                  <input type="radio" class="filter__input filter__input--radio visually-hidden" name="milk"
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="milk"
                     value="animal-only">
                   <span class="filter__input-new-radio" tabindex="0"></span>
                   <span class="filter__span">Только животное</span>
                 </label>
                 <label class="filter__label">
-                  <input type="radio" class="filter__input filter__input--radio visually-hidden" name="milk"
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="milk"
                     value="plant-only">
                   <span class="filter__input-new-radio"></span>
                   <span class="filter__span">Только растительное</span>
                 </label>
                 <label class="filter__label">
-                  <input type="radio" class="filter__input filter__input--radio visually-hidden" name="milk"
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="milk"
                     value="no-milk" disabled>
                   <span class="filter__input-new-radio"></span>
                   <span class="filter__span">Без молока</span>
@@ -288,31 +288,31 @@
               <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Страна произрастания</legend>
                 <label class="filter__label filter__label--country">
-                  <input type="checkbox" class="filter__input filter__input--checkbox visually-hidden" name="country"
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="country"
                     value="brasil" checked>
                   <span class="filter__input-new-checkbox"></span>
                   <span class="filter__span">Бразилия</span>
                 </label>
                 <label class="filter__label filter__label--country">
-                  <input type="checkbox" class="filter__input filter__input--checkbox visually-hidden" name="country"
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="country"
                     value="Ethiopia">
                   <span class="filter__input-new-checkbox"></span>
                   <span class="filter__span">Эфиопия</span>
                 </label>
                 <label class="filter__label filter__label--country">
-                  <input type="checkbox" class="filter__input filter__input--checkbox visually-hidden" name="country"
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="country"
                     value="colombia">
                   <span class="filter__input-new-checkbox"></span>
                   <span class="filter__span">Колумбия</span>
                 </label>
                 <label class="filter__label filter__label--country">
-                  <input type="checkbox" class="filter__input filter__input--checkbox visually-hidden" name="country"
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="country"
                     value="costa-rica">
                   <span class="filter__input-new-checkbox"></span>
                   <span class="filter__span">Коста-Рика</span>
                 </label>
                 <label class="filter__label filter__label--country">
-                  <input type="checkbox" class="filter__input filter__input--checkbox visually-hidden" name="country"
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="country"
                     value="peru" disabled>
                   <span class="filter__input-new-checkbox"></span>
                   <span class="filter__span">Перу</span>
@@ -327,12 +327,12 @@
 
             <div class="catalog__section catalog-cards">
               <div class="catalog-cards__sorting">
-                <label class="catalog-cards__label">
+                <p class="catalog-cards__label">
                   Сортировка:
                   <select class="catalog-cards__select" name="sorting" id="sorting-select" aria-label="Сортировка">
-                    <option value="default" class="catalog-cards__option">По умолчанию</option>
+                    <option class="catalog-cards__option" value="default">По умолчанию</option>
                   </select>
-                </label>
+                </p>
               </div>
 
               <ul class="catalog-cards__list catalog-list">
@@ -350,9 +350,9 @@
                   </p>
                   <div class="catalog-list__price-wrapper">
                     <span class="catalog-list__price">225&#8381;</span>
-                    <button class="catalog-list__button">
+                    <button class="catalog-list__button" type="button">
                       <svg class="catalog-list__bitton-img" width="20" height="16">
-                        <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
+                        <use href="images/icons/stack.svg#basket-plus-icon"></use>
                       </svg>
                       <span>В корзину</span>
                     </button>
@@ -372,9 +372,9 @@
                   </p>
                   <div class="catalog-list__price-wrapper">
                     <span class="catalog-list__price">225&#8381;</span>
-                    <button class="catalog-list__button">
+                    <button class="catalog-list__button" type="button">
                       <svg class="catalog-list__bitton-img" width="20" height="16">
-                        <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
+                        <use href="images/icons/stack.svg#basket-plus-icon"></use>
                       </svg>
                       <span>В корзину</span>
                     </button>
@@ -394,9 +394,9 @@
                   </p>
                   <div class="catalog-list__price-wrapper">
                     <span class="catalog-list__price">225&#8381;</span>
-                    <button class="catalog-list__button">
+                    <button class="catalog-list__button" type="button">
                       <svg class="catalog-list__bitton-img" width="20" height="16">
-                        <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
+                        <use href="images/icons/stack.svg#basket-plus-icon"></use>
                       </svg>
                       <span>В корзину</span>
                     </button>
@@ -416,9 +416,9 @@
                   </p>
                   <div class="catalog-list__price-wrapper">
                     <span class="catalog-list__price">225&#8381;</span>
-                    <button class="catalog-list__button">
+                    <button class="catalog-list__button" type="button">
                       <svg class="catalog-list__bitton-img" width="20" height="16">
-                        <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
+                        <use href="images/icons/stack.svg#basket-plus-icon"></use>
                       </svg>
                       <span>В корзину</span>
                     </button>
@@ -438,9 +438,9 @@
                   </p>
                   <div class="catalog-list__price-wrapper">
                     <span class="catalog-list__price">225&#8381;</span>
-                    <button class="catalog-list__button">
+                    <button class="catalog-list__button" type="button">
                       <svg class="catalog-list__bitton-img" width="20" height="16">
-                        <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
+                        <use href="images/icons/stack.svg#basket-plus-icon"></use>
                       </svg>
                       <span>В корзину</span>
                     </button>
@@ -460,9 +460,9 @@
                   </p>
                   <div class="catalog-list__price-wrapper">
                     <span class="catalog-list__price">225&#8381;</span>
-                    <button class="catalog-list__button">
+                    <button class="catalog-list__button" type="button">
                       <svg class="catalog-list__bitton-img" width="20" height="16">
-                        <use xlink:href="images/icons/stack.svg#basket-plus-icon"></use>
+                        <use href="images/icons/stack.svg#basket-plus-icon"></use>
                       </svg>
                       <span>В корзину</span>
                     </button>
@@ -474,23 +474,23 @@
                 <li class="pagination-list__item">
                   <button class="pagination-list__button pagination-list__button--prev" type="button">
                     <svg class="pagination-list__button-img" width="10" height="10">
-                      <use xlink:href="images/icons/stack.svg#pagination-arrow-left"></use>
+                      <use href="images/icons/stack.svg#pagination-arrow-left"></use>
                     </svg>
                     <span class="pagination-list__span">Назад</span>
                   </button>
                 </li>
                 <li class="pagination-list__item">
-                  <button class="pagination-list__button-page">
+                  <button class="pagination-list__button-page" type="button">
                     <span class="pagination-list__number">1</span>
                   </button>
                 </li>
                 <li class="pagination-list__item">
-                  <button class="pagination-list__button-page pagination-list__button-page--current">
+                  <button class="pagination-list__button-page pagination-list__button-page--current" type="button">
                     <span class="pagination-list__number">2</span>
                   </button>
                 </li>
                 <li class="pagination-list__item">
-                  <button class="pagination-list__button-page">
+                  <button class="pagination-list__button-page" type="button">
                     <span class="pagination-list__number">3</span>
                   </button>
                 </li>
@@ -498,7 +498,7 @@
                 <li class="pagination-list__item">
                   <button class="pagination-list__button pagination-list__button--next" type="button">
                     <svg class="pagination-list__button-img" width="10" height="10">
-                      <use xlink:href="images/icons/stack.svg#pagination-arrow-right"></use>
+                      <use href="images/icons/stack.svg#pagination-arrow-right"></use>
                     </svg>
                     <span class="pagination-list__span">Вперёд</span>
                   </button>
@@ -509,6 +509,7 @@
         </div>
       </section>
       <section class="main__section map" data-test="map">
+        <h2 class="visually-hidden">Карта</h2>
         <picture class="map__picture">
           <source type="image/webp" media="(min-width: 1440px)"
             srcset="images/map-desktop.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="540">
@@ -516,9 +517,9 @@
             srcset="images/map-tablet.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="480">
           <source type="image/webp" srcset="images/map-mobile.webp 1x, images/map-mobile@2x.webp 2x" width="320"
             height="420">
-          <source media="(min-width: 1440px)" srcset="images/map-desktop.jpg 1x, images/map-desktop.jpg@2x.png 2x"
+          <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop.jpg 1x, images/map-desktop.jpg@2x.png 2x"
             width="1440" height="540">
-          <source media="(min-width: 768px)" srcset="images/map-tablet.jpg 1x, images/map-tablet.jpg@2x.png 2x"
+          <source type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet.jpg 1x, images/map-tablet.jpg@2x.png 2x"
             width="768" height="480">
           <img class="map__img" src="images/map-mobile.jpg" srcset="images/map-mobile@2x.png 2x" width="320"
             height="420"
@@ -533,26 +534,26 @@
           <h4 class="visually-hidden">Социальные сети</h4>
           <div class="footer-main__logo-wrapper">
             <picture>
-              <source media="(min-width: 768px)" srcset="./images/logo-desktop.svg" width="170" height="36">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-desktop.svg" width="170" height="36">
               <img class="footer-main__logo" src="./images/logo-laptop.svg" width="82" height="36"
                 alt="Логотип компании Drink2Go">
             </picture>
             <span class="footer-main__logo-span">Интернет-магазин кофейных напитков</span>
           </div>
           <div class="footer-main__socials-wrapper">
-            <a class="footer-main__social-link" href="#">
+            <a class="footer-main__social-link" href="#" aria-label="Перейти на нашу страницу в VK">
               <svg class="footer-main__social-img" width="20" height="20">
-                <use xlink:href="images/icons/stack.svg#vk-icon"></use>
+                <use href="images/icons/stack.svg#vk-icon"></use>
               </svg>
             </a>
-            <a class="footer-main__social-link" href="#">
+            <a class="footer-main__social-link" href="#" aria-label="Перейти на нашу страницу в Pinterest">
               <svg class="footer-main__social-img" width="20" height="20">
-                <use xlink:href="images/icons/stack.svg#pinterest-icon"></use>
+                <use href="images/icons/stack.svg#pinterest-icon"></use>
               </svg>
             </a>
-            <a class="footer-main__social-link" href="#">
+            <a class="footer-main__social-link" href="#" aria-label="Перейти на нашу страницу в OK">
               <svg class="footer-main__social-img" width="20" height="20">
-                <use xlink:href="images/icons/stack.svg#ok-icon"></use>
+                <use href="images/icons/stack.svg#ok-icon"></use>
               </svg>
             </a>
           </div>
@@ -596,10 +597,11 @@
           </a>
         </section>
         <section class="footer__section footer-development">
+          <h2 class="visually-hidden">Сайт разработан в:</h2>
           <a class="footer-development__link" href="#">
             Разработано в HTML Academy
             <svg class="footer-development__img" width="12" height="16">
-              <use xlink:href="images/icons/stack.svg#html-academy-icon"></use>
+              <use href="images/icons/stack.svg#html-academy-icon"></use>
             </svg>
           </a>
         </section>
