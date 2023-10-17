@@ -225,13 +225,13 @@
       background-color 0.25s ease-in-out,
       border 0.25s ease-in-out;
 
-      @media (min-width: $tablet) {
-        left: 11px;
-      }
+    @media (min-width: $tablet) {
+      left: 11px;
+    }
 
-      @media (min-width: $desktop) {
-        left: 0px;
-      }
+    @media (min-width: $desktop) {
+      left: 0;
+    }
   }
 
   &::after {
