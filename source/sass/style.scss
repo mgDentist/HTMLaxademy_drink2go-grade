@@ -7,8 +7,8 @@
 
 /* BLOCKS */
 @import "blocks/page";
-@import "blocks/header";
-@import "blocks/nav-list";
+@import "blocks/header/header.scss";
+@import "blocks/header/nav-list.scss";
 @import "blocks/main/main.scss";
 @import "blocks/main/slider.scss";
 @import "blocks/main/features.scss";

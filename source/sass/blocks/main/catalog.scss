@@ -35,7 +35,8 @@
 
 .catalog__badge {
   @include badge;
-  margin-bottom: 4px;
+  display: block;
+  margin-bottom: 6px;
 }
 
 .catalog__title {

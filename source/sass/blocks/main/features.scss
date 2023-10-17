@@ -9,7 +9,7 @@
 
 .features {
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet) {
     padding-top: 248px;
@@ -23,6 +23,7 @@
 
 .features__badge {
   @include badge;
+  display: block;
   margin-bottom: 4px;
 }
 

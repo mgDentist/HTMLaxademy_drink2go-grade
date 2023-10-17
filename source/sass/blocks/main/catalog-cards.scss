@@ -1,6 +1,5 @@
 .catalog-cards {
   padding-top: 36px;
-  padding-bottom: 44px;
 
   @media (min-width: $tablet) {
     padding-top: 44px;
@@ -25,7 +24,7 @@
 .catalog-cards__select {
   @include label;
   color: $base-primary;
-
+  letter-spacing: 1px;
   padding: 4px 30px 4px 10px;
   text-transform: lowercase;
   background-image: url("/images/arrow-select.svg");

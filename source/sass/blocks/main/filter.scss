@@ -1,7 +1,7 @@
 .filter {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 29px;
   padding-top: 20px;
   padding-bottom: 4px;
 
@@ -54,6 +54,7 @@
 
 .filter__button {
   @include features-subtitle-tablet; //возможно лучше не использовать миксин тут, тк название не подходит
+  letter-spacing: 1px;
   padding: 8px 20px;
   border-radius: 4px;
 }
