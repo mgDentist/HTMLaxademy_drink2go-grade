@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    row-gap: 39px;
     padding-bottom: 0;
   }
 
@@ -30,6 +31,12 @@
 .filter__legend {
   @include label;
   margin-bottom: 20px;
+
+  &--country {
+    @media (min-width: $tablet) {
+      margin-left: 7px;
+    }
+  }
 }
 
 .filter__span {
@@ -177,6 +184,10 @@
 
 .filter__label--country {
   padding-left: 52px;
+
+  @media (min-width: $tablet) {
+    padding-left: 65px;
+  }
 }
 
 .filter__input-new-checkbox {
@@ -193,6 +204,10 @@
     transition:
       background-color 0.25s ease-in-out,
       border 0.25s ease-in-out;
+
+      @media (min-width: $tablet) {
+        left: 11px;
+      }
   }
 
   &::after {
@@ -201,11 +216,15 @@
     width: 20px;
     height: 20px;
     top: 50%;
-    left: 3px;
+    left: 2px;
     background-color: $base-white;
     border-radius: 12px;
     transform: translateY(-50%);
     transition: left 0.25s ease-in-out;
+
+    @media (min-width: $tablet) {
+      left: 13px;
+    }
   }
 }
 
@@ -221,7 +240,11 @@
 }
 
 .filter__input--checkbox:checked + .filter__input-new-checkbox::after {
-  left: 19px;
+  left: 20px;
+
+  @media (min-width: $tablet) {
+    left: 31px;
+  }
 }
 
 .filter__input--checkbox:disabled + .filter__input-new-checkbox::before {

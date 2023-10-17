@@ -2,8 +2,8 @@
   padding-top: 36px;
 
   @media (min-width: $tablet) {
-    padding-top: 44px;
-    padding-bottom: 90px;
+    padding-top: 41px;
+    padding-bottom: 10px;
   }
 }
 
@@ -19,6 +19,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 8px;
+
+  @media (min-width: $tablet) {
+    gap: 3px;
+  }
 }
 
 .catalog-cards__select {
@@ -46,5 +50,9 @@
   &:focus {
     background-color: $base-white;
     background-image: url("/images/arrow-select-up.svg");
+  }
+
+  @media (min-width) {
+    padding: 4px 28px 4px 10px;
   }
 }

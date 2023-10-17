@@ -72,6 +72,10 @@
   &:disabled .pagination-list__span {
     color: $base-white;
   }
+
+  @media (min-width: $tablet) {
+    padding: 8px 24px;
+  }
 }
 
 .pagination-list__button-page {

@@ -1,5 +1,9 @@
 .range {
   width: 280px;
+
+  @media (min-width: $tablet) {
+    width: 223px;
+  }
 }
 
 .range__scale {
@@ -8,12 +12,21 @@
   margin-bottom: 34px;
   height: 2px;
   background-color: $light-grey;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 31px;
+  }
 }
 
 .range__bar {
+  width: 259px;
   position: absolute;
   height: 4px;
   background-color: $primary-lighter;
+
+  @media (min-width: $tablet) {
+    width: 200px;
+  }
 }
 
 .range__toggle {
@@ -25,19 +38,54 @@
   border-radius: 50%;
   border: 2px solid $primary-lighter;
   cursor: pointer;
+  transition: border 0.25s ease-in-out;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-48%, -48%, 0);
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $primary-opacity;
+  }
+
+  &:active::after {
+    background-color: $base-primary;
+  }
+
+  &:active {
+    border: 2px solid $base-primary;
+  }
+
+  @media (min-width: $tablet) {
+    top: -9px;
+  }
 }
 
 .range__toggle--min {
-  left: 0;
+  left: -1px;
 }
 
 .range__toggle--max {
-  right: 0;
+  right: -1px;
 }
 
 .range__inputs {
   display: flex;
   gap: 18px;
+
+  @media (min-width: $tablet) {
+    gap: 20px;
+  }
 }
 
 .range__input {
@@ -51,8 +99,24 @@
   line-height: 24px;
   border: 2px solid $primary-lighter;
   border-radius: 4px;
+  transition: border 0.25s ease-in-out;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $primary-darker;
+  }
+
+  &:disabled {
+    border: 2px solid $light-grey;
+    background-color: $lighest-grey;
+  }
 
   &::placeholder {
     color: $base-grey;
+  }
+
+  @media (min-width: $tablet) {
+    width: 87px;
+    padding: 6px 10px;
   }
 }

@@ -7,9 +7,9 @@
   padding: 20px 0 40px;
 
   @media (min-width: $tablet) {
-    padding: 26px 0 70px;
+    padding: 26px 0 71px;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 31px;
   }
 
   @media (min-width: $desktop) {
@@ -24,7 +24,7 @@
   border-radius: 4px;
 
   @media (min-width: $tablet) {
-    padding: 50px 30px 30px;
+    padding: 49px 30px 30px;
   }
 
   &:hover {
@@ -46,6 +46,7 @@
 
   @media (min-width: $tablet) {
     @include h2-mobile;
+    letter-spacing: 1.4px;
     margin-bottom: 10px;
   }
 }
@@ -96,5 +97,9 @@
 
   &:disabled {
     background-color: $base-grey;
+  }
+
+  @media (min-width: $tablet) {
+    gap: 8px;
   }
 }
