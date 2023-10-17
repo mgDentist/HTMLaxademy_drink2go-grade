@@ -26,9 +26,6 @@
   gap: 20px;
   text-align: left;
 
-  @media (min-width: $tablet) {
-    flex-basis: 222px;
-  }
 }
 
 .filter__legend {

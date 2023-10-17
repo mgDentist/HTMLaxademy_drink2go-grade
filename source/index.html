@@ -232,6 +232,29 @@
 
               <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Цена</legend>
+                <div class="range">
+                  <div class="range__scale">
+                    <div class="range__bar" style="width: 241px">
+                      <button class="range__toggle range__toggle--min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range__toggle range__toggle--max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="range__inputs">
+                    <label class="range__label">
+                      <input class="range__input range__input--from" type="number" name="min-price" placeholder="0">
+                    </label>
+                    <svg class="catalog-list__bitton-img" width="8" height="2">
+                      <use xlink:href="images/icons/stack.svg#input-hyphen"></use>
+                    </svg>
+                    <label class="range__label">
+                      <input class="range__input range__input--to" type="number" name="max-price" value="900" >
+                    </label>
+                  </div>
+                </div>
               </fieldset>
 
               <fieldset class="filter__fieldset">
@@ -308,8 +331,6 @@
                   Сортировка:
                   <select class="catalog-cards__select" name="sorting" id="sorting-select" aria-label="Сортировка">
                     <option value="default" class="catalog-cards__option">По умолчанию</option>
-                    <option value="new" class="catalog-cards__option">Сначала новые</option>
-                    <option value="popular" class="catalog-cards__option">Сначала популярные</option>
                   </select>
                 </label>
               </div>
